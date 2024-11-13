@@ -1,0 +1,61 @@
+{
+  "assessment_name": "test assessment",
+  "assessment_changes":[
+    {
+      "value": 1,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Consumers Awareness",
+      "value_description": "weak"
+    },
+    {
+      "value": 2,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Indigenous Knowledge",
+      "value_description": "included"
+    }
+  ],
+  "assessment_answers": [
+    {
+      "value": 2,
+      "indicator_path": [ "SOCIO-POLICY PILLAR", "Production"],
+      "value_description": "yes",
+      "indicator_name": "Food Sovereignty"
+    },
+    {
+      "value": 1,
+      "indicator_path": [ "SOCIO-POLICY PILLAR", "Consumers"],
+      "value_description": "low",
+      "indicator_name": "Food Sovereignty"
+    },
+    {
+      "value": 1,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Indigenous Knowledge",
+      "value_description": "excluded"
+    },
+    {
+      "value": 1,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Traditional recipes",
+      "value_description": "excluded"
+    },
+    {
+      "value": 2,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Consumers Education",
+      "value_description": "medium"
+    },
+    {
+      "value": 3,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Preference for processed Food",
+      "value_description": "low"
+    },
+    {
+      "value": 2,
+      "indicator_path": ["SOCIO-POLICY PILLAR", "Consumers"],
+      "indicator_name": "Income",
+      "value_description": "medium"
+    }
+  ]
+}

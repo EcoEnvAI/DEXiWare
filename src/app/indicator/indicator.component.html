@@ -1,0 +1,57 @@
+<button routerLink="">Back</button><button (click)="logout()">Logout</button>
+<h3>{{ currentPillar + ">" + indicator.INDICATOR_NAME }}</h3>
+<div>
+    <div>
+        <span>
+            <b>NAME: </b>
+            {{ indicator.INDICATOR_NAME }}
+        </span>
+    </div>
+    <div>
+        <span>
+            <b>THEME: </b>
+            {{ indicator.THEME }}
+        </span>
+    </div>
+    <div>
+        <span *ngIf="indicator['SUB-THEME']">
+            <b>SUB-THEME: </b>
+            {{ indicator['SUB-THEME'] }}
+        </span>
+    </div>
+    <div>
+        <span *ngIf="indicator['SUB-SUB-THEME']">
+            <b>SUB-SUB-THEME: </b>
+            {{ indicator['SUB-SUB-THEME'] }}
+        </span>
+    </div>
+    <div>
+        <span *ngIf="indicator['SUB-SUB-SUB-THEME']">
+            <b>SUB-SUB-SUB-THEME: </b>
+            {{ indicator['SUB-SUB-SUB-THEME'] }}
+        </span>
+    </div>
+    <div>
+        <span>
+            <b>NODE: </b>
+            {{ indicator.NODE }}
+        </span>
+    </div>
+</div>
+<br>
+<div>
+    <b>DESCRIPTION:</b>
+    <p [innerHtml]=showDescription(indicator.DESCRIPTION)></p>
+</div>
+<div>
+    <b>METRICS:</b>
+    <p [innerHtml]=showDescription(indicator.METRICS)></p>
+</div>
+<div>
+    <b>RATINGS:</b>
+    <p [innerHtml]=showRatings()></p>
+</div>
+<div>
+    <b>DESCRIPTIONS OF RATINGS:</b>
+    <p [innerHtml]=showRatingsDescriptions()></p>
+</div>

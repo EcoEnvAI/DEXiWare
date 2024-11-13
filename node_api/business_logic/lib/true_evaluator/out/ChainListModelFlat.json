@@ -1,0 +1,436 @@
+{
+  "output": "flat",
+  "model": [
+    {
+      "path": "/Production",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production",
+      "attribute": "Production",
+      "type": "aggregate"
+    },
+    {
+      "path": "/Production/Production_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production - Environmental pillar",
+      "attribute": "Production_EnvironmentalPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Production/Production_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production - Economic pillar",
+      "attribute": "Production_EconomicPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Production/Production_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production - Social-Policy pillar",
+      "attribute": "Production_SocialPolicyPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Processing",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing",
+      "attribute": "Processing",
+      "type": "aggregate"
+    },
+    {
+      "path": "/Processing/Processing_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing - Environmental pillar",
+      "attribute": "Processing_EnvironmentalPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Processing/Processing_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing - Economic pillar",
+      "attribute": "Processing_EconomicPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Processing/Processing_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing - Social-Policy pillar",
+      "attribute": "Processing_SocialPolicyPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Transportation",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Transportation",
+      "attribute": "Transportation",
+      "type": "aggregate"
+    },
+    {
+      "path": "/Transportation/Tranportation_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Tranportation - Environmental pillar",
+      "attribute": "Tranportation_EnvironmentalPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Transportation/Tranportation_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Tranportation - Economic pillar",
+      "attribute": "Tranportation_EconomicPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Transportation/Tranportation_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Tranportation - Social-Policy pillar",
+      "attribute": "Tranportation_SocialPolicyPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Market",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market",
+      "attribute": "Market",
+      "type": "aggregate"
+    },
+    {
+      "path": "/Market/Market_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market - Environmental pillar",
+      "attribute": "Market_EnvironmentalPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Market/Market_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market - Economic pillar",
+      "attribute": "Market_EconomicPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Market/Market_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market - Social-Policy pillar",
+      "attribute": "Market_SocialPolicyPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Consumption",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumption",
+      "attribute": "Consumption",
+      "type": "aggregate"
+    },
+    {
+      "path": "/Consumption/Consumers_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumers - Environmental pillar",
+      "attribute": "Consumers_EnvironmentalPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Consumption/Consumers_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumers - Economic pillar",
+      "attribute": "Consumers_EconomicPillar",
+      "type": "link"
+    },
+    {
+      "path": "/Consumption/Consumers_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumers - Social-Policy pillar",
+      "attribute": "Consumers_SocialPolicyPillar",
+      "type": "link"
+    },
+    {
+      "path": "/AgriFoodChain",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Agri-food chain",
+      "attribute": "AgriFoodChain",
+      "type": "aggregate"
+    },
+    {
+      "path": "/AgriFoodChain/EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Environmental pillar - chain",
+      "attribute": "EnvironmentalPillar",
+      "type": "aggregate"
+    },
+    {
+      "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production - Environmental pillar",
+      "attribute": "Production_EnvironmentalPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing - Environmental pillar",
+      "attribute": "Processing_EnvironmentalPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Tranportation - Environmental pillar",
+      "attribute": "Tranportation_EnvironmentalPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market - Environmental pillar",
+      "attribute": "Market_EnvironmentalPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumers - Environmental pillar",
+      "attribute": "Consumers_EnvironmentalPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Economic pillar - chain",
+      "attribute": "EconomicPillar",
+      "type": "aggregate"
+    },
+    {
+      "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production - Economic pillar",
+      "attribute": "Production_EconomicPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing - Economic pillar",
+      "attribute": "Processing_EconomicPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Tranportation - Economic pillar",
+      "attribute": "Tranportation_EconomicPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market - Economic pillar",
+      "attribute": "Market_EconomicPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumers - Economic pillar",
+      "attribute": "Consumers_EconomicPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/Social-PolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Social-Policy pillar - chain",
+      "attribute": "Social-PolicyPillar",
+      "type": "aggregate"
+    },
+    {
+      "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Production - Social-Policy pillar",
+      "attribute": "Production_SocialPolicyPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Processing - Social-Policy pillar",
+      "attribute": "Processing_SocialPolicyPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Tranportation - Social-Policy pillar",
+      "attribute": "Tranportation_SocialPolicyPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Market - Social-Policy pillar",
+      "attribute": "Market_SocialPolicyPillar",
+      "type": "input"
+    },
+    {
+      "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+      "values": [
+        "Low",
+        "Medium",
+        "High"
+      ],
+      "description": "Consumers - Social-Policy pillar",
+      "attribute": "Consumers_SocialPolicyPillar",
+      "type": "input"
+    }
+  ],
+  "operation": "list_model",
+  "model_path": "models/AgriFoodChainIntegrated.dxi"
+}

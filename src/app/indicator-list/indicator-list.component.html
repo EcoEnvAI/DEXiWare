@@ -1,0 +1,10 @@
+<button (click)="logout()">Logout</button>
+<div *ngFor="let pillar of pillarNames; index as pillarId">
+    <h3>{{ pillarNames[pillarId] }}</h3>
+    <p *ngFor="let indicator of indicators[pillar]; index as indicatorId">
+        <a [title]="'Show details for ' + indicator.INDICATOR_NAME" [routerLink]="[pillarId, indicatorId]">
+        {{ indicator.INDICATOR_NAME }}
+        </a>
+        <li>{{ "Used ratings: " + indicator.RATINGS }}</li>
+    </p>
+</div>

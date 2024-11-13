@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEXi>
+  <VERSION>5.04</VERSION>
+  <CREATED>2020-05-11T18:13:35</CREATED>
+  <NAME>Tranportation_EnvironmentalPillar</NAME>
+  <DESCRIPTION>2020_04_09_EnvirPill_3_transportation - Verified</DESCRIPTION>
+  <SETTINGS>
+    <REPORTS>6</REPORTS>
+  </SETTINGS>
+  <ATTRIBUTE>
+    <NAME>Tranportation_EnvironmentalPillar</NAME>
+    <DESCRIPTION>Tranportation_EnvironmentalPillar</DESCRIPTION>
+    <SCALE>
+      <SCALEVALUE>
+        <NAME>Low</NAME>
+        <GROUP>BAD</GROUP>
+      </SCALEVALUE>
+      <SCALEVALUE>
+        <NAME>Medium</NAME>
+      </SCALEVALUE>
+      <SCALEVALUE>
+        <NAME>High</NAME>
+        <GROUP>GOOD</GROUP>
+      </SCALEVALUE>
+    </SCALE>
+    <FUNCTION>
+      <LOW>000011111000111122011011122001112122</LOW>
+      <CONSIST>False</CONSIST>
+    </FUNCTION>
+    <ATTRIBUTE>
+      <NAME>Transport intensity</NAME>
+      <DESCRIPTION>proxy for energy/ Highest intensity transport that applies to &gt;10% product ingredients.</DESCRIPTION>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>Global airfreight</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Global ocean</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>EU level</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Local</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+    </ATTRIBUTE>
+    <ATTRIBUTE>
+      <NAME>Atmosphere emissions</NAME>
+      <DESCRIPTION>kgCO2e/t product dry matter</DESCRIPTION>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+    </ATTRIBUTE>
+    <ATTRIBUTE>
+      <NAME>Loss of products</NAME>
+      <DESCRIPTION>% of produce trasported</DESCRIPTION>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>&gt;5% loss</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>2-5% loss</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>&lt;2% loss</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+    </ATTRIBUTE>
+  </ATTRIBUTE>
+</DEXi>

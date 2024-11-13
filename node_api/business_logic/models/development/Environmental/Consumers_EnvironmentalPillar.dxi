@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEXi>
+  <VERSION>5.04</VERSION>
+  <CREATED>2020-05-11T18:15:01</CREATED>
+  <NAME>Consumers_EnvironmentalPillar</NAME>
+  <DESCRIPTION>2020_04_09_EnvirPill_5_consumers - Verified</DESCRIPTION>
+  <OPTION>steak</OPTION>
+  <OPTION>beans</OPTION>
+  <SETTINGS>
+    <REPORTS>6</REPORTS>
+  </SETTINGS>
+  <ATTRIBUTE>
+    <NAME>Consumers_EnvironmentalPillar</NAME>
+    <DESCRIPTION>Consumers_EnvironmentalPillar</DESCRIPTION>
+    <SCALE>
+      <SCALEVALUE>
+        <NAME>Low</NAME>
+        <GROUP>BAD</GROUP>
+      </SCALEVALUE>
+      <SCALEVALUE>
+        <NAME>Medium</NAME>
+      </SCALEVALUE>
+      <SCALEVALUE>
+        <NAME>High</NAME>
+        <GROUP>GOOD</GROUP>
+      </SCALEVALUE>
+    </SCALE>
+    <FUNCTION>
+      <LOW>000000000011111112111122222</LOW>
+    </FUNCTION>
+    <OPTION>1</OPTION>
+    <OPTION>1</OPTION>
+    <ATTRIBUTE>
+      <NAME>Waste</NAME>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+      <FUNCTION>
+        <LOW>001111122</LOW>
+      </FUNCTION>
+      <OPTION>1</OPTION>
+      <OPTION>2</OPTION>
+      <ATTRIBUTE>
+        <NAME>Food Loss and Waste Reduction</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&gt;25% product wasted</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>10-25% product wasted</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&lt;10% product wasted</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>2</OPTION>
+        <OPTION>2</OPTION>
+      </ATTRIBUTE>
+      <ATTRIBUTE>
+        <NAME>Waste Disposal</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&lt;50% waste recycled</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>50-80% waste recycled</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&gt;80% waste recycled</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>0</OPTION>
+        <OPTION>1</OPTION>
+      </ATTRIBUTE>
+    </ATTRIBUTE>
+    <ATTRIBUTE>
+      <NAME>Energy</NAME>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+      <FUNCTION>
+        <LOW>001011112222</LOW>
+      </FUNCTION>
+      <OPTION>1</OPTION>
+      <OPTION>0</OPTION>
+      <ATTRIBUTE>
+        <NAME>Cooking intensity</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>Oven</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>Pot boiling</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>Pan</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>No cooking</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>2</OPTION>
+        <OPTION>1</OPTION>
+      </ATTRIBUTE>
+      <ATTRIBUTE>
+        <NAME>Renewable Energy %</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&lt;20% renewable</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>20-50% renewable</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&gt;50% renewable</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>0</OPTION>
+        <OPTION>0</OPTION>
+      </ATTRIBUTE>
+    </ATTRIBUTE>
+    <ATTRIBUTE>
+      <NAME>Water use</NAME>
+      <DESCRIPTION>Low: no cleaning, no cooking, </DESCRIPTION>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High: cleaning/soaking and boiling</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium: cleaning/soaking or boiling</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low:no cleaning/soaking, no boiling</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+      <OPTION>2</OPTION>
+      <OPTION>0</OPTION>
+    </ATTRIBUTE>
+  </ATTRIBUTE>
+</DEXi>
