@@ -1,0 +1,122 @@
+@use "../../../styles/variables";
+
+:host {
+    display: block;
+    padding-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    height: 155px;
+    margin: 0;
+    padding: 0;
+    li {
+        overflow: hidden;
+
+        .tabs {
+            height: auto;
+            display: block;
+            overflow: hidden;
+            
+            li {
+                float: left;
+                border-radius: 5px;
+                padding: 3px 8px;
+                margin: 0px 10px 10px 10px;
+                color: variables.$color-dark;
+                background: variables.$color-very-light;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                cursor: pointer;
+
+                &.active {
+                    background: variables.$color-medium;
+                }
+            }
+        }
+
+        form {
+            display: block;
+            overflow: hidden;
+            background-color: variables.$color-very-light;
+
+            .left {
+                display: block;
+                padding-left: 19px;
+                width: 255px;
+                height: 90px;
+                float: left;
+
+                input {
+                    display: block;
+                    width: 255px;
+                    height: 35px;
+                    border-radius: 28px;
+                    border: 3px solid variables.$color-medium;
+                    background-color: variables.$color-very-light;
+                    box-shadow: none;
+                    outline: none;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 2.1px;
+                    color: variables.$color-dark;
+                    padding-left: 15px;
+                    margin-top: 7px;
+                }
+    
+                ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: variables.$color-medium;
+                    opacity: 1; /* Firefox */
+                }
+            }
+
+            .button {
+                float: left;
+                width: 103px;
+                height: 59px;
+                background-image: url('../../../assets/icons/rarrow.svg');
+                background-position: 18px center;
+                background-repeat: no-repeat;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 2.1px;
+                text-transform: uppercase;
+                color: variables.$color-dark;
+                padding: 20px 0 0 53px;
+                user-select: none;
+                cursor: pointer;
+                margin: 14px 0 17px 25px;
+            }
+
+            span {
+                display: block;
+                float: left;
+                color: #dd4444;
+                margin-top: 33px;
+                font-size: 16px;
+            }
+
+            select {
+                border-radius: 5px;
+                font-size: 14px;
+                margin: 22px 0;
+                padding: 10px;
+            }
+        }
+
+        h2 {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+            color: variables.$color-dark;
+            padding-left: 19px;
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+}

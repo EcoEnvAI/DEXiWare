@@ -1,0 +1,71 @@
+<div id="bottomUp" class="analysisBody">
+    <div class="center" [ngClass]="{loading: isLoading}">
+        <true-breadcrumbs [subset]="this.config.subset" [assessmentName]="assessmentName"></true-breadcrumbs>
+        <div class="summary" [ngClass]="{pillarModels: config.pillar_models}" *ngIf="pillars">
+            <div class="vennState left">
+                <h3>BEFORE</h3>
+                <true-venn-diagram *ngIf="evaluationData && !config.pillar_models" [values]="evaluationData" [options]="{ legend: false }"></true-venn-diagram>
+                <true-evaluation-diagram *ngIf="evaluationData && config.pillar_models" [values]="evaluationData" [options]="{ legend: false }"></true-evaluation-diagram>
+            </div>
+            <div class="vennState right" *ngIf="!config.pillar_models">
+                <h3>AFTER</h3>
+                <true-venn-diagram [values]="" [options]="{ legend: false }" *ngIf="!(selectionsChanged && changedEvaluationData)"></true-venn-diagram>
+                <true-venn-diagram [values]="changedEvaluationData" [options]="{ legend: false }" *ngIf="changedEvaluationData && selectionsChanged"></true-venn-diagram>
+            </div>
+            <div class="vennState right" *ngIf="config.pillar_models">
+                <h3>AFTER</h3>
+                <true-evaluation-diagram [values]="" [options]="{ legend: false }" *ngIf="!(selectionsChanged && changedEvaluationData)"></true-evaluation-diagram>
+                <true-evaluation-diagram [values]="changedEvaluationData" [options]="{ legend: false }" *ngIf="changedEvaluationData && selectionsChanged"></true-evaluation-diagram>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="clearbtn" *ngIf="config.pillar_models" [ngClass]="{active: true, selected: showNodes}" (click)="revealNodes()">REVEAL SUBCATEGORIES</div>
+            <div class="clearbtn" *ngIf="!config.pillar_models" [ngClass]="{active: true, selected: showNodes}" (click)="revealNodes()">REVEAL LINKS</div>
+            <div *ngIf="showNodes" [ngClass]="{pillarModels: config.pillar_models}" class="nodes">
+                <ul class="left">
+                    <li *ngFor="let pillar of pillars" [ngClass]="pillar.classname">
+                        <img [src]="pillar.icon" />
+                        <true-node-chain [nodes]="pillar.nodes" type="analysis"></true-node-chain>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li *ngFor="let pillar of changedEvaluationDataPillars" [ngClass]="pillar.classname">
+                        <img [src]="pillar.icon" />
+                        <true-node-chain [nodes]="pillar.nodes" type="analysis"></true-node-chain>
+                    </li>
+                </ul>
+            </div>
+            <div *ngIf="showChanges" class="listChanges">
+                <div class="left">
+                    <h3>Input changes</h3>
+                    <ul class="changes">
+                        <li *ngFor="let change of inputChanges">
+                            <h3>{{change.path}}</h3>
+                            <span>Changed from {{change.orig}} to <em>{{change.new}}</em></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <h3>Result changes</h3>
+                    <ul class="changes">
+                        <li *ngFor="let change of resultChanges">
+                            <h3>{{change.path}}</h3>
+                            <span>Changed from {{change.orig}} to <em>{{change.new}}</em></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="smallbtns-container">
+                <div class="smallbtns">
+                    <div class="smallbtn" [ngClass]="{'active': selectionsChanged}" (click)="clear()">CLEAR CHANGES</div>
+                    <div class="smallbtn" [ngClass]="{'active': selectionsChanged}" (click)="update()">EVALUATE CHANGES</div>
+                    <div class="smallbtn active" [ngClass]="{'active': selectionsChanged && changedEvaluationData}" (click)="saveScenario()">SAVE SCENARIO</div>
+                </div>
+            </div>
+        </div>
+
+        <true-bottomup-input *ngIf="ready" [pillars]="pillars" [nodes]="nodes" [selections]="selections" (change)="changed()"></true-bottomup-input>
+    </div>
+</div>

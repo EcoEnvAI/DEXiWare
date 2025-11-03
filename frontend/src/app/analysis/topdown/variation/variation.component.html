@@ -1,0 +1,27 @@
+<div class="left">
+    <div class="header">
+        <div class="small"><true-venn-diagram [values]="originalData"></true-venn-diagram></div><h2>+{{goal}}</h2> <div class="direction-indicator" [ngClass]="{'up': direction == 'improve', 'dn': direction == 'degrade'}"></div>
+    </div>
+    <div class="smallbtn" (click)="saveScenario()">Save scenario</div>
+
+    <h3>Required changes ({{changes.length}})</h3>
+    <ul class="changes">
+        <li *ngFor="let change of changes">
+            <h3>{{change.path}}</h3>
+            <span>Changed from {{change.orig}} to <em>{{change.new}}</em></span>
+        </li>
+    </ul>
+</div>
+<div class="mid">
+    <h2>Variation {{idx}}</h2>
+    <h3 *ngIf="config.pillar_models">Subcategories</h3>
+    <h3 *ngIf="!config.pillar_models">Links</h3>
+    <ul>
+        <li *ngFor="let pillar of pillars" [ngClass]="pillar.classname">
+            <true-node-chain [nodes]="pillar.nodes" type="analysis"></true-node-chain>
+        </li>
+    </ul>
+</div>
+<div class="right">
+    <true-venn-diagram [values]="data"></true-venn-diagram>
+</div>

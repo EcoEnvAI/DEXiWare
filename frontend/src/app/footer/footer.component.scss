@@ -1,0 +1,70 @@
+@use "../../styles/variables";
+
+:host {
+    background: variables.$color-very-light;
+    display: block;
+    overflow: hidden;
+}
+
+div {
+    width: 1100px;
+    margin: 30px auto;
+
+    #funding {
+        a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: variables.$color-medium;
+            display: block;
+            float:left;
+            width: 800px;
+            height: 60px;
+            padding-left: 100px;
+            background: url(../../assets/EU-flag-logo.png) 0 0;
+            background-size: 80px 54px;
+            background-repeat: no-repeat;
+        }
+    
+        em {
+            font-family: Montserrat;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            color: variables.$color-medium;
+            display: block;
+            float:left;
+            width: 240px;
+            height: 60px;
+            padding-left: 60px;
+            margin-left: 40px;
+            background: url(../../assets/ijs_logo.png) 0 0;
+            background-size: 48px 57px;
+            background-repeat: no-repeat;
+        }
+
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+    }
+    
+
+    span {
+        font-family: Montserrat;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: variables.$color-medium;
+        display: block;
+        text-align: center;
+        margin: 30px 0;
+    }
+}

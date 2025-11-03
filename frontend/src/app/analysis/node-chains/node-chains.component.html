@@ -1,0 +1,9 @@
+<div *ngFor="let pillar of pillars">
+    <h2>
+        <div>
+            <true-pillar-icon [value]="pillar.value" [pillar]="pillar.name.replaceAll(' ', '-')"></true-pillar-icon>
+            <span>{{pillar.name}}</span>
+        </div>
+    </h2>
+    <true-node-chain [nodes]="pillar.nodes" type="pillar"></true-node-chain>
+</div>

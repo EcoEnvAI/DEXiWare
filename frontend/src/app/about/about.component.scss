@@ -1,0 +1,70 @@
+@use "../../styles/variables";
+
+::ng-deep .mat-dialog-container {
+    overflow: hidden !important;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: variables.$color-dark;
+    display: block;
+    line-height: 54px;
+    margin: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+p, ul, li {
+    color: variables.$color-dark;
+    font-family: Georgia;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 1.05px;
+}
+
+h2 {
+    color: variables.$color-medium;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-align:center;
+    height: 83px;
+    background-image: url('../../assets/icons/chainColor.svg');
+    background-position: 312px 18px;
+    background-repeat: no-repeat;
+    background-size: 123px 70px;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+h3 {
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3.13px;
+    text-align:center;
+    margin-top: 8px;
+}
+
+button {
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    letter-spacing: 1.05px;
+    margin: 20px auto 0 auto;
+    display: block;
+    border: 0;
+    background: none;
+}
+
+.bottom {
+    position: relative;
+    top: -80px;
+}

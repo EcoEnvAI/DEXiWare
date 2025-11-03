@@ -1,0 +1,35 @@
+  <div class="center">
+    <h1 *ngIf="!config.pillar_models">Pathfinder</h1>
+    <h2 *ngIf="!config.pillar_models">for agri-food chains</h2>
+    <form name="form" *ngIf="state=='valid'" (ngSubmit)="f.form.valid && reset()" #f="ngForm" novalidate>
+      <h3>Password reset for {{username}}</h3>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+        <input type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="model.password" #password="ngModel" required />
+        <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+      </div>
+      <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+        <input type="password" class="form-control" name="repeated_password" placeholder="repeat password" [(ngModel)]="model.repeated_password" #repeated_password="ngModel" required />
+        <div *ngIf="f.submitted && !repeated_password.valid" class="help-block">Password is required</div>
+        <div *ngIf="f.submitted && model.repeated_password!=model.password" class="help-block">Passwords must match</div>
+      </div>
+      <div class="submit">
+        <button></button>
+      </div>
+    </form>
+    <form name="form" *ngIf="state=='invalid'" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="help-block">The password reset link has expired.</div>
+        <div class="submit">
+          <button></button>
+        </div>
+    </form>
+    <form name="form" *ngIf="state=='success'" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="help-block">The password was successfully set. Proceed to login.</div>
+        <div class="submit">
+          <button></button>
+        </div>
+    </form>
+
+    <h2 *ngIf="config.pillar_models">Powered by</h2>
+    <h3 *ngIf="config.pillar_models">DEXiWare</h3>
+  </div>
+  

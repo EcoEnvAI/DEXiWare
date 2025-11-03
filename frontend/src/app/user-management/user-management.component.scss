@@ -1,0 +1,111 @@
+@use "../../styles/variables";
+
+:host {
+    display:block;
+    margin:20px 20px 20px 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .node-header {
+        color: variables.$color-dark;
+        background: #fff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 12px 0 8px 0;
+    }
+
+    .node-permissions {
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            li {
+                float: left;
+                border-bottom: 2px solid variables.$color-light;
+                user-select: none;
+                flex: 0 0 400px;
+                align-items: stretch;
+            }
+
+            li+li {
+                flex: 0 0 200px;
+            }
+
+            .name {
+                flex: 0 0 400px;
+                line-height: 28px;
+                height: 100%;
+
+                div {
+                    display: inline-block;
+                    font-family: Montserrat;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 2.1px;
+                    line-height: 28px;
+                    color: variables.$color-dark;
+                    padding-left: 53px;
+                    padding-top: 0;
+                    margin-top: 0;
+                    background-image: url('/../../../assets/icons/node.svg');
+                    background-position: 18px center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+
+        ul:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+}
+
+.economic {
+    background-color: variables.$color-econ-light;
+
+    ::ng-deep {
+        .name div {
+            background-color: variables.$color-econ-light;
+        }
+    }
+}
+
+.environmental {
+    background-color: variables.$color-env-light;
+
+    ::ng-deep {
+        .name div {
+            background-color: variables.$color-env-light;
+        }
+    }
+}
+
+.social {
+    background-color: variables.$color-soc-light;
+
+    ::ng-deep {
+        .name div {
+            background-color: variables.$color-soc-light;
+        }
+    }
+}
+
+ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}

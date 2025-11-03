@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "true_evaluator_basic_validation_schema",
+  "type": "object",
+  "title": "Basic structure of a request",
+  "description": "Basic structure of a request to be executed.",
+  "default": {},
+  "required": [
+    "operation",
+    "model",
+    "model_path"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "operation": {
+      "$id": "#/properties/operation",
+      "type": "string",
+      "enum": ["list_inputs","list_model"],
+      "title": "Operation",
+      "description": "Operation to be executed"
+    },
+    "output": {
+      "$id": "#/properties/output",
+      "type": "string",
+      "enum": [ "flat", "tree" ],
+      "title": "Output",
+      "description": "Structure the output need to be formatted like",
+      "default": "flat"
+    },
+    "model": {
+      "$id": "#/properties/model",
+      "type": "string",
+      "title": "Model name",
+      "description": "Model to be used in evaluation"
+    },
+    "model_path": {
+      "$id": "#/properties/model_path",
+      "type": "string",
+      "title": "DEX model path",
+      "description": "Absolute path to the DEX model"
+    }
+  }
+}

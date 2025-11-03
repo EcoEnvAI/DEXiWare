@@ -1,0 +1,65 @@
+@use "../../../../styles/variables";
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+    width: 27px;
+}
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: variables.$color-medium;
+    border-radius: 5px;
+    border: 12px solid #fff;
+    height: 120px;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: variables.$color-medium white;
+}
+
+.changes {
+    border-radius: 12px;
+    border: 2px solid variables.$color-light;
+    margin: 0;
+    padding: 15px 0 0 15px;
+    height: 167px;
+    overflow: auto;  
+
+    li {
+        text-align: left;
+        margin: 0 0 15px 15px;
+        h3 {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 20px;
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+            color: variables.$color-dark;
+            margin:0;
+        }
+        span {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 20px;
+            letter-spacing: 2.1px;
+            color: variables.$color-medium;
+
+            em {
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                font-style: normal;
+                line-height: 20px;
+                letter-spacing: 2.1px;
+                color: variables.$color-dark;
+                font-style: normal;
+            }
+        }
+    }
+}

@@ -1,0 +1,641 @@
+{
+    "assessment_name": "Test assessment ",
+    "assessment_answers": [
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Soil Organic Matter"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "Land sharing/habitat provision"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "Land use"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "Food Loss and Waste Reduction"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "Waste Disposal"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Renewable and Recycled packaging"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Atmosphere emissions"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Transport intensity"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Loss of products"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Energy Efficiency"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "Scale",
+            "indicator_name": "Renewable Electricity %"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "Scale",
+            "indicator_name": "Renewable and Recycled Materials"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Packaging specification"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Cooking intensity"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Water use"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Net Trade"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "absence",
+            "indicator_name": "Product Information *(Labelling and other Information)"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Education and Information"
+        },
+        {
+            "value": 3,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "high",
+            "indicator_name": "Culture"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "weak",
+            "indicator_name": "Taxes and Bans"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Educational Campaigns"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "weak",
+            "indicator_name": "Income support Policies"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "low",
+            "indicator_name": "Greening of CAP"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Food Sovereignty"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Agro-ecology"
+        },
+        {
+            "value": 3,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "high",
+            "indicator_name": "Fair Access to Means of Production"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Freedom of Association and Right to Bargaining"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Connect Farmers to markets"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "acceptable",
+            "indicator_name": "Rights of Consumers"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "present",
+            "indicator_name": "Community Supported Agriculture"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "yes",
+            "indicator_name": "Fair Pricing and Transparent Contracts"
+        },
+        {
+            "value": 3,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "high",
+            "indicator_name": "Income"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "absent",
+            "indicator_name": "Taxation of Unhealthy Food"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "absent",
+            "indicator_name": "Income Support Policies"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "excluded",
+            "indicator_name": "Dietary guidelines"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Public procurement"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "GHG Balance"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "Emission of Air Pollutants"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "P balance"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "N balance"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Electricity"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Other fuels"
+        },
+        {
+            "value": 1,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Renewable electricity"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "Renewable other sources"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Net Income"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "yes",
+            "indicator_name": "Safety Nets"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "no",
+            "indicator_name": "Full Cost Accounting"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Internal Investment"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Long Term Profitability"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "yes",
+            "indicator_name": "Sustainability Management Plan"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Stability of Supplier Relationships"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Dependence on the Leading Supplier"
+        },
+        {
+            "value": 3,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "high",
+            "indicator_name": "Stability of Market"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "yes",
+            "indicator_name": "Price Determination"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Product Diversification"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "Absence",
+            "indicator_name": "Control Measures"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Food Quality"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "no",
+            "indicator_name": "Certified Production"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Regional Workforce"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Local Procurement"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "managed",
+            "indicator_name": "Food Loss and Waste Reduction"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "achieved",
+            "indicator_name": "GHG Reduction Target"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Cost of Production"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "managed",
+            "indicator_name": "Land Use and Land Cover Change"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Guarantee of Product level"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Guarantee of Supply Level"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "absence",
+            "indicator_name": "Product Labelling"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "presence",
+            "indicator_name": "Traceability System"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Cost of Marketing and Storage"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "managed",
+            "indicator_name": "Food Loss"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "not managed",
+            "indicator_name": "Food Redistribution Scheme (Including waste management)"
+        },
+        {
+            "value": 3,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "high",
+            "indicator_name": "Availability of Products"
+        },
+        {
+            "value": 3,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "high",
+            "indicator_name": "Willingness to Pay for Healthy Products"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Willingness to Pay For Environmental Friendly Products"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Financial Vulnerability"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "low",
+            "indicator_name": "Safety and Health Trainings"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "acceptable",
+            "indicator_name": "Wage Level"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Non Discrimination"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "present",
+            "indicator_name": "Innovation and Licencing"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "high",
+            "indicator_name": "Consumer preferenes for processed food"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "yes",
+            "indicator_name": "Rights of Suppliers"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "excluded",
+            "indicator_name": "Indigenous Knowledge"
+        },
+        {
+            "value": 3,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "high",
+            "indicator_name": "Consumers’ Education"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "present",
+            "indicator_name": "Advertising of Healthy Food"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Ground and Surface Water Withdrawals"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Price of Food"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Price Promotion"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "high",
+            "indicator_name": "SynP fertilisers"
+        },
+        {
+            "value": 2,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Stability of Consumer Demand"
+        },
+        {
+            "value": 1,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "low",
+            "indicator_name": "Willingness to Pay For Convenience"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "low",
+            "indicator_name": "Safety of Workplace, Operations and Facilities"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Health Coverage and Access to Medical care"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "medium",
+            "indicator_name": "Support to Vulnerable People"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "present",
+            "indicator_name": "Presence of local processing facilities"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "absent",
+            "indicator_name": "Public Health"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Rights of Retailers"
+        },
+        {
+            "value": 3,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "low",
+            "indicator_name": "Preference for processed Food"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "present",
+            "indicator_name": "School meals"
+        },
+        {
+            "value": 2,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "medium",
+            "indicator_name": "SynN fertilisers"
+        },
+        {
+            "value": 3,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "high",
+            "indicator_name": "Food Expenditure"
+        },
+        {
+            "value": 3,
+            "pillar": "ECONOMIC PILLAR",
+            "value_description": "high",
+            "indicator_name": "Food Scarcity*(quality and quantity)"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "no",
+            "indicator_name": "Employment Relations"
+        },
+        {
+            "value": 3,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "high",
+            "indicator_name": "Capacity Development"
+        },
+        {
+            "value": 1,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "unacceptable",
+            "indicator_name": "Gender Equality"
+        },
+        {
+            "value": 2,
+            "pillar": "SOCIO-POLICY PILLAR",
+            "value_description": "included",
+            "indicator_name": "Traditional recipes"
+        },
+        {
+            "value": 3,
+            "pillar": "ENVIRONMENTAL PILLAR",
+            "value_description": "low",
+            "indicator_name": "Diesel consumption"
+        }
+    ]
+}

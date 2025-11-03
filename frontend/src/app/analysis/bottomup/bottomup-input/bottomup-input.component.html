@@ -1,0 +1,49 @@
+<ul *ngIf="config.pillar_models">
+    <li class="header pillarModels">
+        <ul class="horizontal">
+            <li *ngFor="let pillar of pillars" [ngClass]="pillar.classname">
+                <em>{{pillar.name}}</em>
+                <ul>
+                    <li class="node" *ngFor="let node of pillar.nodes" [ngClass]="{expanded: node.expanded}">
+                        <h2><em [ngClass]="node.classname">{{node.name}}</em> <div (click)="expand(node)"></div></h2>
+                        <true-traffic-lights
+                            [readonly]="false"
+                            [(selected)]="selections[pillar.name.toLowerCase().replaceAll(' ','_')].nodes[node.classname].value"
+                            [thresholds]="thresholds"
+                            [value]="pillarNode(pillar, node).value"
+                            (change)="changed(pillar, node)"></true-traffic-lights>
+                        <ul class="normal" *ngIf="node.expanded">
+                            <li *ngFor="let indicator of node.indicators">
+                                <true-indicator-row [readonly]="nodeChanged(pillar, node, indicator)" [indicator]="indicator" [(selected)]="selections[pillar.name.toLowerCase().replaceAll(' ','_')].nodes[node.classname].indicators[indicator.id]" (selectedChange)="changed(null, null)"></true-indicator-row>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<ul *ngIf="!config.pillar_models">
+    <li class="header">
+        <ul class="horizontal">
+            <li *ngFor="let pillar of pillars" [ngClass]="pillar.classname">
+                <em>{{pillar.name}}</em>
+                <true-traffic-lights [readonly]="false" [(selected)]="selections[pillar.name.toLowerCase().replaceAll(' ','_')].value" [thresholds]="thresholds" [value]="pillar.value" (change)="changed(null, null)"></true-traffic-lights>
+            </li>
+        </ul>
+    </li>
+    <li class="node" *ngFor="let node of nodes" [ngClass]="{expanded: node.expanded}">
+        <h2><em [ngClass]="node.classname">{{node.name}}</em> <div (click)="expand(node)"></div></h2>
+        <ul class="horizontal">
+            <li *ngFor="let pillar of pillars" [ngClass]="pillar.classname">
+                <true-traffic-lights [readonly]="false" [(selected)]="selections[pillar.name.toLowerCase().replaceAll(' ','_')].nodes[node.classname].value" [thresholds]="thresholds" [value]="pillarNode(pillar, node).value" (change)="changed(null, null)"></true-traffic-lights>
+                <ul class="normal" *ngIf="node.expanded">
+                    <li *ngFor="let indicator of pillarNode(pillar, node).indicators">
+                        <true-indicator-row [readonly]="nodeChanged(pillar, node, indicator)" [indicator]="indicator" [(selected)]="selections[pillar.name.toLowerCase().replaceAll(' ','_')].nodes[node.classname].indicators[indicator.id]" (selectedChange)="changed(null, null)"></true-indicator-row>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>

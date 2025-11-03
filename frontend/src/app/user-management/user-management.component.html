@@ -1,0 +1,26 @@
+<true-pillar-selector [pillars]="pillars" [selectedPillar]="selectedPillar" (select)="selectPillar($event)"></true-pillar-selector>
+
+<ul [ngClass]="pillarClass()">
+    <li>
+        <true-new-user *ngIf="newUserInput" [users]="allUsers" (complete)="refresh(true)"></true-new-user>
+        <true-user-stats *ngIf="!newUserInput" (newUserClick)="newUserInput=true" [assessmentId]="assessmentId" [users]="users" [pillar]="selectedPillar" [nodes]="nodes"></true-user-stats>
+    </li>
+    <ng-template [ngIf]="!newUserInput">
+        <li *ngFor="let node of nodes">
+            <ul>
+                <li class="node-header">{{node.description.description}}</li>
+                <li class="node-permissions">
+                    <ul>
+                        <li class="name">
+                            <div></div>
+                        </li>
+                        <li *ngFor="let user of users">
+                            <true-permission-selector [values]="nodeUserPermissions(node, user)" (change)="setNodeUserPermissions(node, user, $event)"></true-permission-selector>
+                        </li>
+                    </ul>
+                </li>
+                <true-user-permissions *ngFor="let indicator of node.indicators" [assessmentId]="assessmentId" [node]="node" [indicator]="indicator" [users]="users"></true-user-permissions>
+            </ul>
+        </li>
+    </ng-template>
+</ul>

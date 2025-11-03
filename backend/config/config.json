@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "dexiware_user",
+    "password": "dexiware_password",
+    "database": "dexiware_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "dexiware_user",
+    "password": "dexiware_password",
+    "database": "dexiware_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "dexiware_user",
+    "password": "dexiware_password",
+    "database": "dexiware_db",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

@@ -1,0 +1,70 @@
+@use "../../styles/variables";
+
+::ng-deep .mat-dialog-container {
+    overflow: hidden !important;
+}
+
+:host {
+    position: relative;
+}
+
+h1, h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    letter-spacing: 2.1px;
+    color: variables.$color-dark;
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 300;
+}
+
+button {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    width: 350px;
+    height: 20px;
+    color: variables.$color-light;
+    background-color: variables.$color-white;
+    background-position: 34px 0;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    padding: 1px 0 0 74px;
+    user-select: none;
+    margin: 23px auto 13px auto;
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    display: block;
+    text-align: left;
+    border: none;
+    background-image: url('../../assets/icons/rarrow-light.svg');
+
+    &.enabled {
+        cursor: pointer;
+        color: variables.$color-dark;
+        background-image: url('../../assets/icons/rarrow.svg');
+    }
+}
+
+#content {
+    margin-top: 420px;
+    width: 1410px;
+
+    .page {
+        min-height: 1960px;
+    }
+}

@@ -1,0 +1,138 @@
+@use "../../../styles/variables";
+
+.pillarContainer {
+
+    .pillarClear {
+        visibility: hidden;
+        text-align: center;
+        color: variables.$color-medium;
+        font-family: Montserrat;
+        font-size: 15px;
+        text-decoration: underline;
+        display: block;
+        padding-bottom: 10px;
+    }
+
+    &:hover {
+        .pillarClear {
+            visibility: visible;
+        }
+    }
+
+    .column {
+        width: 414px;
+        margin-right: 14px;
+        float: left;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .node-header {
+        color: variables.$color-dark;
+        background: #fff;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 12px 0 8px 0;
+    }
+
+    .node {
+        a {
+            visibility: hidden;
+            text-align: center;
+            color: variables.$color-medium;
+            font-family: Montserrat;
+            font-size: 15px;
+            text-decoration: underline;
+            display: block;
+            padding-bottom: 10px;
+        }
+
+        &:hover {
+            a {
+                visibility: visible;
+            }
+        }
+    }
+
+    .node-indicators {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        li {
+            width: 414px;
+            margin-right: 14px;
+        }
+
+
+        .pillar-indicators {
+            padding: 20px;
+            display: block;
+
+            &.pillarModels {
+                padding: 20px 20px 0px 20px;
+            }
+
+            li {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.economic, .resource-use-efficiency {
+    background-color: variables.$color-econ-light;
+
+    ::ng-deep {
+        .name div {
+            background-color: variables.$color-econ-light;
+        }
+    }
+}
+
+.environmental {
+    background-color: variables.$color-env-light;
+
+    ::ng-deep {
+        .name div {
+            background-color: variables.$color-env-light;
+        }
+    }
+}
+
+.social, .socio-economic {
+    background-color: variables.$color-soc-light;
+
+    ::ng-deep {
+        .name div {
+            background-color: variables.$color-soc-light;
+        }
+    }
+}
+
+ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.pillarModels {
+    li {
+        width: 414px;
+        margin-right: 14px;
+        float: left;
+
+        li {
+            margin-left: -4px;
+        }
+    }
+}

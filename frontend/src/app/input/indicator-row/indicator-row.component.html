@@ -1,0 +1,12 @@
+<true-complete-icon [value]="indicator.value !== null && indicator.value !== undefined"></true-complete-icon>
+<span (click)="select()" (mouseenter)="enter()" (mouseleave)="leave()">{{indicator.description.name}}</span>
+<div *ngIf="showTooltip" class="indicator-tooltip">
+    <p>{{indicator.description.description}}</p>
+    <ul>
+        <li *ngFor="let threshold of indicator.Indicator_thresholds"><em [ngClass]="thresholdClass(threshold, indicator.value)">{{threshold.description.name}}</em> {{threshold.description.description}}</li>
+    </ul>
+</div>
+<div [style.margin-left]="indicator.Indicator_thresholds.length>3 ? '-22px': '0px'">
+    <true-traffic-lights [readonly]="readonly" *ngIf="selected!==undefined" [(selected)]="selected" [thresholds]="indicator.Indicator_thresholds" [value]="indicator.value" (change)="changed()"></true-traffic-lights>
+    <true-traffic-lights [readonly]="readonly" *ngIf="selected===undefined" [thresholds]="indicator.Indicator_thresholds" [value]="indicator.value"></true-traffic-lights>
+</div>

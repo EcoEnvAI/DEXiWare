@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "true_evaluator_evaluation_schema",
+  "type": "object",
+  "title": "Evaluation-based schema",
+  "description": "Evaluation-based schema validates operation with similar structure",
+  "default": {},
+  "required": [
+    "operation",
+    "output",
+    "model",
+    "model_path",
+    "alternatives"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "operation": {
+      "$id": "#/properties/operation",
+      "type": "string",
+      "enum": ["evaluation","partial_evaluation"],
+      "title": "Operation",
+      "description": "Operation to be executed",
+      "default": "evaluation"
+    },
+    "output": {
+      "$id": "#/properties/output",
+      "type": "string",
+      "enum": [ "flat", "tree" ],
+      "title": "Output",
+      "description": "Structure the output need to be formatted like",
+      "default": "flat"
+    },
+    "model": {
+      "$id": "#/properties/model",
+      "type": "string",
+      "title": "Model name",
+      "description": "Model to be used in evaluation"
+    },
+    "model_path": {
+      "$id": "#/properties/model_path",
+      "type": "string",
+      "title": "DEX model path",
+      "description": "Absolute path to the DEX model"
+    },
+    "model_path_manager": {
+      "$id": "#/properties/model_path_manager",
+      "type": "string",
+      "title": "JS model for DEX model paths",
+      "description": "JavaScript model that handle DEX model paths"
+    },
+    "undefined_value": {
+      "$id": "#/properties/undefined_value",
+      "type": "string",
+      "title": "DEX treat of null values",
+      "description": "DEX treat of null values"
+    },
+    "alternatives": {
+      "$id": "#/properties/alternatives",
+      "type": "array",
+      "title": "Alternatives",
+      "description": "Array of alternatives to be evaluated",
+      "default": [],
+      "additionalItems": false,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/alternatives/items/anyOf/0",
+            "type": "object",
+            "title": "Single alternative",
+            "description": "Description of an alternative",
+            "default": {},
+            "required": [
+              "alternative",
+              "inputs"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "alternative": {
+                "$id": "#/properties/alternatives/items/anyOf/0/properties/alternative",
+                "type": "string",
+                "title": "Alternative name",
+                "description": "Descriptive name for a given alternative"
+              },
+              "inputs": {
+                "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs",
+                "type": "array",
+                "title": "Input attributes",
+                "description": "Array of input attributes",
+                "default": [],
+                "additionalItems": false,
+                "items": {
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0",
+                      "type": "object",
+                      "title": "Input attribute",
+                      "description": "Input attribute",
+                      "default": {},
+                      "required": [
+                        "values"
+                      ],
+                      "additionalProperties": false,
+                      "properties": {
+                        "values": {
+                          "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0/properties/values",
+                          "type": "array",
+                          "title": "Value",
+                          "description": "Value of input attribute",
+                          "additionalItems": false,
+                          "items": {
+                            "anyOf": [
+                              {
+                                "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0/properties/values/items/anyOf/0",
+                                "type": "string",
+                                "title": "Single value",
+                                "description": "Single value of input attribute"
+                              },
+                              {
+                                "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0/properties/values/items/anyOf/1",
+                                "type": "number",
+                                "title": "Single value",
+                                "description": "Single value of input attribute"
+                              }
+                            ],
+                            "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0/properties/values/items"
+                          }
+                        },
+                        "attribute": {
+                          "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0/properties/attribute",
+                          "type": "string",
+                          "title": "Attribute name",
+                          "description": "Name of input attribute"
+                        },
+                        "path": {
+                          "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items/anyOf/0/properties/path",
+                          "type": "string",
+                          "title": "Attribute path",
+                          "description": "Path of input attribute"
+                        }
+                      },
+                      "oneOf": [
+                        {
+                          "required": [ "attribute" ]
+                        },
+                        {
+                          "required": [ "path" ]
+                        }
+                      ]
+                    }
+                  ],
+                  "$id": "#/properties/alternatives/items/anyOf/0/properties/inputs/items"
+                }
+              }
+            }
+          }
+        ],
+        "$id": "#/properties/alternatives/items"
+      }
+    }
+  }
+}

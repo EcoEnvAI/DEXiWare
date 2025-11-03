@@ -1,0 +1,58 @@
+@use "../../styles/variables";
+
+:host {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+
+    ul {
+        list-style-type: none;
+        margin: 0 auto 20px auto;
+        padding: 0;
+        display: inline-block;
+        width: auto;
+
+        &.centered {
+            li {
+                float: none;
+                display: inline-block;
+            }
+        }
+
+        li {
+            float: left;
+            color: variables.$color-medium;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.1px;
+        }
+
+        li+li {
+            &.key {
+                &:before {
+                    content: '-';
+                    padding: 0 8px; 
+                }
+            }
+        }
+
+        .value {
+            &:before {
+                content: ':';
+                padding: 0 8px; 
+            }
+        }
+
+        &:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        ul {
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "pillar_models": false,
+    "anonymous": false,
+    "registration": true,
+    "email" : {
+        "server": "mailbox.ijs.si",
+        "port": 25,
+        "user": "nrcsd",
+        "password": "tvo.bliki.nodi"
+    }
+}

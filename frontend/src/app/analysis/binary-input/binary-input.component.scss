@@ -1,0 +1,49 @@
+ul {
+    list-style-type: none;
+    width: 71px;
+    margin: 0;
+    padding: 0;
+
+    li {
+        float: left;
+        width: 30px;
+        height: 26px;
+        &.clickable {
+            cursor: pointer;
+        }
+
+        &#up {
+            background: url(../../../assets/icons/upTriangleDark.svg);
+            opacity: 0.140;
+
+            &.selected {
+                opacity: 1 !important;
+            }
+            &.clickable {
+                opacity: 0.35;
+            }
+        }
+
+        &#down {
+            background: url(../../../assets/icons/dnTriangleDark.svg);
+            opacity: 0.140;
+
+            &.selected {
+                opacity: 1 !important;
+            }
+            &.clickable {
+                opacity: 0.35;
+            }
+        }
+    }
+
+    li+li {
+        margin-left: 11px;
+    }
+
+    &:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}

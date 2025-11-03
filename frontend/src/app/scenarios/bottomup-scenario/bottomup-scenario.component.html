@@ -1,0 +1,24 @@
+<div class="vennState left">
+    <h3>BEFORE</h3>
+    <true-venn-diagram *ngIf="!config.pillar_models && evaluationData" [values]="evaluationData" [options]="{ legend: false }"></true-venn-diagram>
+    <true-evaluation-diagram *ngIf="config.pillar_models && evaluationData" [values]="evaluationData" [options]="{ legend: false }"></true-evaluation-diagram>
+</div>
+<div class="middle">
+    <h2 *ngIf="!name">Result {{idx}}</h2>
+    <h2 *ngIf="name">{{name}}</h2>
+    <true-breadcrumbs *ngIf="name" [subset]="config.subset" [assessmentName]="assessmentName" [includeModels]="false"></true-breadcrumbs>
+    <h4>{{created | date: 'dd. MM. yyyy HH:mm'}}</h4>
+    <h3>Input changes ({{inputChanges.length}})</h3>
+    <ul class="changes">
+        <li *ngFor="let change of inputChanges">
+            <h3>{{change.path}}</h3>
+            <span>Changed from {{change.orig}} to <em>{{change.new}}</em></span>
+        </li>
+    </ul>
+</div>
+<div class="vennState right">
+    <h3>AFTER</h3>
+    <true-venn-diagram *ngIf="!config.pillar_models && changedEvaluationData" [values]="changedEvaluationData" [options]="{ legend: false }"></true-venn-diagram>
+    <true-evaluation-diagram *ngIf="config.pillar_models && changedEvaluationData" [values]="changedEvaluationData" [options]="{ legend: false }"></true-evaluation-diagram>
+</div>
+<div class="remove" (click)="remove()"></div>

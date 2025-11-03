@@ -1,0 +1,86 @@
+@use "../../../styles/variables";
+
+:host {
+    display: block;
+    padding-top: 25px;
+}
+
+ul {
+    list-style-type: none;
+    height: 155px;
+    margin: 0;
+    padding: 0;
+    li {
+        width: 400px;
+        float: left;
+
+        h2 {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+            color: variables.$color-dark;
+            padding-left: 19px;
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .button {
+            width: 163px;
+            height: 59px;
+            background-color: variables.$color-very-light;
+            background-image: url('../../../assets/icons/plus.svg');
+            background-position: 18px center;
+            background-repeat: no-repeat;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+            color: variables.$color-dark;
+            padding: 20px 0 0 53px;
+            user-select: none;
+            cursor: pointer;
+        }
+        
+        div {
+            margin-bottom: 19px;
+
+            em, span {
+                display: block;
+                font-family: Montserrat;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 28px;
+                letter-spacing: 2.1px;
+                color: variables.$color-medium;
+            }
+
+            em {
+                font-weight: 600;
+                font-style: normal;
+                color: variables.$color-dark;
+
+                &.loading {
+                    color: variables.$color-medium;
+                }
+
+                i {
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    li+li {
+        width: 200px;
+    }
+}
+
+ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}

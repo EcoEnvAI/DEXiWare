@@ -1,0 +1,148 @@
+@use "../../styles/variables";
+
+::ng-deep .mat-dialog-container {
+    overflow: auto !important;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 2.1px;
+    color: variables.$color-dark;
+    padding-left: 19px;
+    padding-top: 0;
+    margin: 0 0 30px 20px;
+    display: block;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+    li {
+        label {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: variables.$color-dark;
+            padding-left: 10px;
+            user-select: none; 
+            cursor: pointer;
+
+        }
+
+        input[type='radio'] {
+            cursor: pointer;
+        }
+
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: variables.$color-light;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid variables.$color-medium;
+        }
+    
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: variables.$color-dark;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid variables.$color-medium;
+        }
+    }
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid variables.$color-dark;
+    box-shadow: none;
+    width: 400px;
+    margin: 0 auto 20px auto;
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    color: variables.$color-dark;
+    line-height: 32px;
+    outline: none;
+}
+
+.textual {
+    text-align: center;
+
+    button {
+        width: 400px;
+        height: 20px;
+        color: variables.$color-light;
+        background-color: variables.$color-white;
+        background-position: 34px 0;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        padding: 1px 0 0 74px;
+        user-select: none;
+        margin: 10px auto 10px auto;
+        border-radius: 15px;
+        font-family: Montserrat;
+        font-style: normal;
+        display: block;
+        text-align: left;
+        border: none;
+        background-image: url('../../assets/icons/rarrow-light.svg');
+        cursor: default;
+
+        &.enabled {
+            cursor: pointer;
+            color: variables.$color-dark;
+            background-image: url('../../assets/icons/rarrow.svg');
+        }
+    }
+}
+
+.simple {
+    text-align: center;
+    width: 170px;
+    margin: 0 auto;
+    button {
+        float: left;
+        display:block;
+        width:77px;
+        height:40px;
+        margin: 0px 4px;
+        border-radius: 28px;
+        border: 2px solid variables.$color-medium;
+        background-image: url('../../assets/icons/checkmark.svg');
+        background-position: 30px 13px;
+        background-repeat:no-repeat;
+        background-color: variables.$color-medium;
+
+        &.cancel {
+            background-image: url('../../assets/icons/cross.svg');
+        }
+    }
+
+    &::after {
+        content: '';
+        display: 'table';
+        clear: both;
+    }
+}

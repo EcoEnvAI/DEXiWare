@@ -1,0 +1,13 @@
+@use "../../../styles/variables";
+
+span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid variables.$color-dark;
+}
+
+.complete {
+    background: variables.$color-dark;
+}

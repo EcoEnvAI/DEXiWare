@@ -1,0 +1,18 @@
+<ul [ngClass]="type">
+    <li *ngFor="let node of nodes; let idx = index" [class.first]="idx==0" [class.last]="idx==nodes.length-1">
+        <div>
+            <h3 *ngIf="config.pillar_models">{{node.description.description}}</h3>
+            <span [ngClass]="nodeClass(node.value)"><svg-icon [src]="baseHref + 'assets/' + node.icon" [svgStyle]="iconStyle"></svg-icon></span>
+            <!--<span [ngClass]="nodeClass(node.value)"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAA2FJREFUWEftmD9IG1Ecx7/nIAQKtU7WDBV0VKqDmYq6mc1mdGqrmwr5BXQRpK2Dk5AXUDfTdtGx6ZZMtdBJBy06KraD1E0LBcXBK9/jLrykd2fI3SUG/MERzb33fp98f3/evTPQIma0CCceQMOOVFMUTafT4wBeGIbxyDTNvwC+53K5kt+PayioiHQA+AxgzAVqB0BKKXXpBtxo0H0Ag7FYDMPDwxgYGMDh4SH29vZwdXVFvgOl1FBTQUXkHYC3hJifn0c8Hi/znJ2dYXV11fn/vVKKYyusIYraIT8F0JFMJjE+zhSttFKphGKxyC8vlVJPmgX6GsAHOl9ZWQFDX20M/eLiovM1c7WgjwlVUREZBDBhO/iilDrg3yKiAKSZk1NTU57Fnc/nrZwFkFNKSeigItJjVzNBdWMlvwHwEcCoV9idCVr4vymlKjpDYEVtFb8y/+iwv7/f8nt0dOT4Z7vh1TM9PV2+7yYr52xubvJWJKCEHGPezc7OlquZlby+vu60HYtrbm4Ovb29nqE/OTnB2tpaMFCG1zCMZ6Zp/lJK/bRzr1wk1S2H96vaTvSgIpJlTWhSsCKd3JtIJBKYnJx0VWp7exu7u7vRKyoi3PJe0hPDxvDYxkKxEt4v97S8i05REbFCy12E+cc8ZL8rFApllQiazVJwd9P7Y2Q5KiKn8Xi8x4HUUbjlMQc7OzuxtLTkCcobbOQEjgTUbjv7XmE9Pj62qrqvr89S2884juOjApVYLJblludlVNVpS80E3UkkEqNe1ewrYZ036+qjIrKTTCZH3Z506uS4c5ovqIiYXiukUimMjIzc6SCsARrof0safqB37c1hATrr1ATqVrlsPbwaZWxhbHm6sWPQyor6Ne1Ggbr5yWQyD6ChBqAlFL24uMDy8vL9D73+5HWvi0k7Q1lVz5Pi8/tW9dfX11bY7TcoPwjKE+KrhYUFdHd3h1oIQRbTjs5c5hNBecTd51MQdyK/w1cQx7XOZQFtbW1Zj4WaDVnHZf29EM8/fMbkRdlt6Wv1U/c4gnFX4meVz4xSSpXP9SLCwxtfTj2u21u4E/+Qh5DWFqqvPTMz09Xe3p68vb3tMgzjabh+a1vNNM3fbW1t5zc3N8WNjY1zZ1bgNyW1uQ8+6gE0uIaVK7SMov8AoUDEkUa6ey8AAAAASUVORK5CYII=" style="z-index:100; position:relative; top:-36px; left:0px;"/></span>-->
+        </div>
+        <svg [attr.width]="width" [attr.height]="height" class="bg-line">
+            <line *ngIf="idx==0; else second" [attr.x1]="width/2" [attr.y1]="height/2" [attr.x2]="width" [attr.y2]="height/2" [attr.stroke-width]="strokeWidth" />
+            <ng-template #second>
+                <line *ngIf="idx==nodes.length-1; else default" x1="0" [attr.y1]="height/2" [attr.x2]="width/2" [attr.y2]="height/2" [attr.stroke-width]="strokeWidth" />
+            </ng-template>
+            <ng-template #default>
+                <line x1="0" [attr.y1]="height/2" [attr.x2]="width" [attr.y2]="height/2" [attr.stroke-width]="strokeWidth" />
+            </ng-template>
+        </svg>
+    </li>
+</ul>
