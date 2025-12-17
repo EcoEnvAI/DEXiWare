@@ -1,0 +1,77 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${DB_NAME:?DB_NAME_required}
+      POSTGRES_USER: ${DB_USER:?DB_USER_required}
+      POSTGRES_PASSWORD: ${DB_PASS:?DB_PASS_required}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  backend:
+    build:
+      context: ./backend
+    environment:
+      PORT: ${PORT:?PORT_required}
+      SESSION_SECRET: ${SESSION_SECRET:?SESSION_SECRET_required}
+      APP_BASE_PATH: ${APP_BASE_PATH:?APP_BASE_PATH_required}
+
+      DB_HOST: ${DB_HOST:?DB_HOST_required}
+      DB_PORT: ${DB_PORT:?DB_PORT_required}
+      DB_NAME: ${DB_NAME:?DB_NAME_required}
+      DB_USER: ${DB_USER:?DB_USER_required}
+      DB_PASS: ${DB_PASS:?DB_PASS_required}
+
+      ANONYMOUS: ${ANONYMOUS:?ANONYMOUS_required}
+      PILLAR_MODELS: ${PILLAR_MODELS:?PILLAR_MODELS_required}
+      REGISTRATION_ENABLED: ${REGISTRATION_ENABLED:?REGISTRATION_ENABLED_required}
+
+      SMTP_HOST: ${SMTP_HOST:?SMTP_HOST_required}
+      SMTP_PORT: ${SMTP_PORT:?SMTP_PORT_required}
+      SMTP_USER: ${SMTP_USER:?SMTP_USER_required}
+      SMTP_PASS: ${SMTP_PASS:?SMTP_PASS_required}
+      EMAIL_FROM: ${EMAIL_FROM:?EMAIL_FROM_required}
+
+      SEED_EXAMPLE_DATA: ${SEED_EXAMPLE_DATA:?SEED_EXAMPLE_DATA_required}
+      INDICATORS_JSON_PATH: ${INDICATORS_JSON_PATH}
+
+      ADMIN_USERNAME: ${ADMIN_USERNAME:?ADMIN_USERNAME_required}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:?ADMIN_PASSWORD_required}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:?ADMIN_EMAIL_required}
+      ADMIN_FIRSTNAME: ${ADMIN_FIRSTNAME:?ADMIN_FIRSTNAME_required}
+      ADMIN_LASTNAME: ${ADMIN_LASTNAME:?ADMIN_LASTNAME_required}
+    expose:
+      - "${PORT}"
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  pgadmin:
+    image: dpage/pgadmin4:8
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:?PGADMIN_DEFAULT_EMAIL_required}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:?PGADMIN_DEFAULT_PASSWORD_required}
+    ports:
+      - "${PGADMIN_PORT:?PGADMIN_PORT_required}:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+
+volumes:
+  db_data:
+  pgadmin_data:

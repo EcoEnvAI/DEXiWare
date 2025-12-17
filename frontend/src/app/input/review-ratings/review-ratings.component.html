@@ -1,0 +1,54 @@
+<div *ngIf="!config.pillar_models">
+    <div class="pillarContainer">
+        <true-pillar-selector [pillars]="pillars" class="review" (select)="clickPillar($event)"></true-pillar-selector>
+        <ul>
+            <li *ngFor="let pillar of pillars" [ngClass]="pillarClass(pillar)" class="column">
+                <a href="#" class="pillarClear" (click)="clearIndicators($event, pillar, null)">CLEAR ALL</a>
+            </li>
+        </ul>
+    </div>
+    <ul *ngIf="!config.pillar_models">
+        <li *ngFor="let node of nodes">
+            <ul>
+                <li class="node-header">{{node.description.description}}</li>
+                <li>
+                    <ul class="node-indicators">
+                        <li *ngFor="let pillar of pillars" class="node" [ngClass]="pillarClass(pillar)">
+                            <ul *ngIf="indicators && indicators[pillar.id] && indicators[pillar.id][node.id]" class="pillar-indicators">
+                                <li *ngFor="let indicator of indicators[pillar.id][node.id]">
+                                    <true-indicator-row (click)="clickIndicator(indicator)" [indicator]="indicator"></true-indicator-row>
+                                </li>
+                            </ul>
+                            <a href="#" (click)="clearIndicators($event, pillar, node)">CLEAR LINK</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div *ngIf="config.pillar_models">
+    <true-pillar-selector [pillars]="pillars" class="review" (select)="clickPillar($event)"></true-pillar-selector>
+    <ul class="pillarModels">
+        <li *ngFor="let pillar of pillars" class="pillarContainer" [ngClass]="pillarClass(pillar)">
+            <a href="#" class="pillarClear" (click)="clearIndicators($event, pillar, null)">CLEAR ALL</a>
+            <ul>
+                <ng-template ngFor let-node [ngForOf]="pillar.Nodes">
+                <li class="node-header">{{node.description.description}}</li>
+                <li class="node">
+                    <ul class="node-indicators">
+                        <li>
+                            <ul *ngIf="indicators && indicators[pillar.id] && indicators[pillar.id][node.id]" class="pillar-indicators pillarModels">
+                                <li *ngFor="let indicator of indicators[pillar.id][node.id]">
+                                    <true-indicator-row (click)="clickIndicator(indicator)" [indicator]="indicator"></true-indicator-row>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="#" (click)="clearIndicators($event, pillar, node)">CLEAR LINK</a>
+                </li>
+                </ng-template>
+            </ul>
+        </li>
+    </ul>
+</div>

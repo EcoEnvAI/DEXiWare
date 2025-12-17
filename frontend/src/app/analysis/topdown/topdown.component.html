@@ -1,0 +1,6 @@
+<div id="topDown" class="analysisBody" [ngClass]="{loading: isLoading}">
+    <div *ngIf="topDownVariations">
+        <div class="noResults" *ngIf="topDownVariations.length == 0">No results.</div>
+        <true-variation *ngFor="let variation of topDownVariations; let idx=index" [idx]="idx+1" [original-data]="evaluationData" [goal]="topDownGoalName" [direction]="topDownDirection" [pillars]="variation.pillars" [data]="variation.evaluationData" [changes]="variation.changes" (saveClick)="saveScenario($event, idx)"></true-variation>
+    </div>
+</div>

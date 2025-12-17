@@ -1,0 +1,43 @@
+@use "../../../styles/variables";
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    color: variables.$color-dark;
+    display: block;
+    line-height: 48px;  
+    width: 550px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid variables.$color-dark;
+    box-shadow: none;
+    width: 400px;
+    margin: 0 auto 20px auto;
+    display: block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    color: variables.$color-dark;
+    line-height: 32px;
+    outline: none;
+}
+
+button {
+    display:block;
+    width:77px;
+    height:40px;
+    margin: 0 auto;
+    border-radius: 28px;
+    border: 2px solid variables.$color-medium;
+    background-image: url('../../../assets/icons/checkmark.svg');
+    background-position: 30px 13px;
+    background-repeat:no-repeat;
+    background-color: variables.$color-medium;
+}

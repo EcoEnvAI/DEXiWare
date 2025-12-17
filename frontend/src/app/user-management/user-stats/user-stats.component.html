@@ -1,0 +1,15 @@
+<ul>
+    <li>
+        <h2>USERS</h2>
+        <div class="button" (click)="displayNewForm()">ADD NEW</div>
+    </li>
+    <li *ngFor="let user of users">
+        <div>
+            <em [ngClass]="{loading: isLoading == user.email}">{{user.firstname}} {{user.lastname == '' ? '' : (user.lastname.substring(0,1) + '.')}}<i class="fas fa-copy" (click)="copyLink(user)"></i></em>
+            <!--<span>Invited</span>-->
+            <span>{{assignedStats(user)}} Assigned</span>
+            <span>{{doneStats(user)}} Done</span>
+        </div>  
+        <true-permission-selector *ngIf="nodes" [values]="userPermissions(user)" (change)="setUserPermissions(user, $event)"></true-permission-selector>
+    </li>
+</ul>

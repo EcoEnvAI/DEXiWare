@@ -1,0 +1,32 @@
+<div *ngIf="state=='list'">
+    <h1>My assessments</h1>
+
+    <ul>
+        <li *ngFor="let assessment of assessments">
+            <input name="assessmentId" type="radio" [value]="assessment.id" [id]="assessment.id" [(ngModel)]="assessmentId" />
+            <label [for]="assessment.id">{{assessment.name | truncate: 25}}, {{assessment.createdAt | date: 'dd. MM. yyyy HH:mm'}}</label>
+        </li>
+    </ul>
+
+    <div class="textual" *ngIf="!simple">
+        <button (click)="create()" class="enabled">Create new empty assessment</button>
+        <button (click)="importDemo()" class="enabled">Import demo assessment</button>
+        <button (click)="load()" [ngClass]="{enabled: assessmentId !== null}">Load assessment data</button>
+        <button (click)="delete()" [ngClass]="{enabled: assessmentId !== null}">Delete assessment</button>
+        <button (click)="changeName()" [ngClass]="{enabled: assessmentId !== null}">Change assessment name</button>
+    </div>
+
+    <div *ngIf="simple" class="simple">
+        <button class="cancel" (click)="close()"></button>
+        <button (click)="load()" [ngClass]="{enabled: assessmentId !== null}"></button>
+    </div>
+</div>
+
+<div *ngIf="state=='create'">
+    <h1>Enter a name for this assessment</h1>
+    <input type="text" [(ngModel)]="name" />
+    <div class="simple">
+        <button class="cancel" (click)="cancel()"></button>
+        <button (click)="update()"></button>
+    </div>
+</div>

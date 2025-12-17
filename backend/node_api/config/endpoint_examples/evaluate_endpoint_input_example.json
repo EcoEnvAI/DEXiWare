@@ -1,0 +1,23 @@
+{
+  "assessment_name": "Test assessment ",
+  "assessment_answers": [
+    {
+      "model_name": "TomresRueField",
+      "value": 3,
+      "indicator_path": [
+        "RUE_FIELD",
+        "MANAGEMENT"
+      ],
+      "value_description": "medium",
+      "indicator_name": "Irrigation efficiency"
+    },
+    {
+      "value": 1,
+      "indicator_path": [
+        "ENVIRONMENTAL_GREENHOUSE"
+      ],
+      "value_description": "high",
+      "indicator_name": "N input"
+    }
+  ]
+}

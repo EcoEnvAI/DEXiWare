@@ -1,0 +1,36 @@
+@use "../../../styles/variables";
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        width: 21px;
+        height: 21px;
+        float: left;
+        cursor: pointer;
+
+        svg {
+            stroke: variables.$color-light;
+            fill: variables.$color-light;
+        }
+    }
+
+    .enabled {
+        svg {
+            stroke: variables.$color-dark;
+            fill: variables.$color-dark;
+        }
+    }
+
+    li+li {
+        margin-left: 10px;
+    }
+}
+
+ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}

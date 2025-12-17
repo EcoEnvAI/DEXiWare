@@ -1,0 +1,328 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "Endpoint BOTTOM-UP (input)",
+  "description": "Validation schema of the input JSON object when calling /analysis/bottom-up endpoint",
+  "default": {},
+  "examples": [
+    {
+      "assessment_name": "test assessment",
+      "assessment_changes": [
+        {
+          "value": 1,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Consumers Awareness",
+          "value_description": "weak"
+        },
+        {
+          "value": 2,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Indigenous Knowledge",
+          "value_description": "included"
+        }
+      ],
+      "assessment_answers": [
+        {
+          "value": 2,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Production"
+          ],
+          "value_description": "yes",
+          "indicator_name": "Food Sovereignty"
+        },
+        {
+          "value": 1,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "value_description": "low",
+          "indicator_name": "Food Sovereignty"
+        },
+        {
+          "value": 1,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Indigenous Knowledge",
+          "value_description": "excluded"
+        },
+        {
+          "value": 1,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Traditional recipes",
+          "value_description": "excluded"
+        },
+        {
+          "value": 2,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Consumers Education",
+          "value_description": "medium"
+        },
+        {
+          "value": 3,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Preference for processed Food",
+          "value_description": "low"
+        },
+        {
+          "value": 2,
+          "indicator_path": [
+            "SOCIO-POLICY PILLAR",
+            "Consumers"
+          ],
+          "indicator_name": "Income",
+          "value_description": "medium"
+        }
+      ]
+    }
+  ],
+  "required": [
+    "assessment_name",
+    "assessment_changes",
+    "assessment_answers"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "assessment_name": {
+      "$id": "#/properties/assessment_name",
+      "type": "string",
+      "title": "Assessment name",
+      "description": "Friendly name for the assessment scenario."
+    },
+    "assessment_changes": {
+      "$id": "#/properties/assessment_changes",
+      "type": "array",
+      "title": "List of changes",
+      "description": "List of changes to be considered that overwrite input and/or evaluated values.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "value": 1,
+            "indicator_path": [
+              "SOCIO-POLICY PILLAR",
+              "Consumers"
+            ],
+            "indicator_name": "Consumers Awareness",
+            "value_description": "weak"
+          },
+          {
+            "value": 2,
+            "indicator_path": [
+              "SOCIO-POLICY PILLAR",
+              "Consumers"
+            ],
+            "indicator_name": "Indigenous Knowledge",
+            "value_description": "included"
+          }
+        ]
+      ],
+      "additionalItems": false,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/assessment_changes/items/anyOf/0",
+            "type": "object",
+            "title": "Indicator change",
+            "description": "Object for providing change of indicator value.",
+            "default": {},
+            "examples": [
+              {
+                "value": 1,
+                "indicator_path": [
+                  "SOCIO-POLICY PILLAR",
+                  "Consumers"
+                ],
+                "indicator_name": "Consumers Awareness",
+                "value_description": "weak"
+              }
+            ],
+            "required": [
+              "value",
+              "indicator_name"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "value": {
+                "$id": "#/properties/assessment_changes/items/anyOf/0/properties/value",
+                "type": "integer",
+                "title": "Value/Position",
+                "description": "Integer for the position of the value in corresponding attribute's value scale."
+              },
+              "indicator_path": {
+                "$id": "#/properties/assessment_changes/items/anyOf/0/properties/indicator_path",
+                "type": "array",
+                "title": "Path of attributes",
+                "description": "[OPTIONAL] Array of attributes names (or pats of it) that represents path (or segment of it) from the root to the corresponding attribute. Order is important - closer to the root goes first! This is useful for identifying correct attributes in case of duplicating attributes names for different attributes. For example, if a segment of the path is 'EnvironmentalPillar/Consumers_EnvironmentalPillar', following arrays are valid: ['EnvironmentalPillar','Consumers'], ['Pillar','Consumers_Environmental'], etc.",
+                "default": [],
+                "examples": [
+                  [
+                    "SOCIO-POLICY PILLAR",
+                    "Consumers"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/assessment_changes/items/anyOf/0/properties/indicator_path/items/anyOf/0",
+                      "type": "string",
+                      "title": "Attribute's name",
+                      "description": "Attribute's name.",
+                      "default": "",
+                      "examples": [
+                        "SOCIO-POLICY PILLAR",
+                        "Consumers"
+                      ]
+                    }
+                  ],
+                  "$id": "#/properties/assessment_changes/items/anyOf/0/properties/indicator_path/items"
+                }
+              },
+              "indicator_name": {
+                "$id": "#/properties/assessment_changes/items/anyOf/0/properties/indicator_name",
+                "type": "string",
+                "title": "Attribute's name",
+                "description": "Attribute's name as provided by a model"
+              },
+              "value_description": {
+                "$id": "#/properties/assessment_changes/items/anyOf/0/properties/value_description",
+                "type": "string",
+                "title": "Descriptive/Qualitative value",
+                "description": "[OPTIONAL] Qualitative value with descriptive name."
+              }
+            }
+          }
+        ],
+        "$id": "#/properties/assessment_changes/items"
+      }
+    },
+    "assessment_answers": {
+      "$id": "#/properties/assessment_answers",
+      "type": "array",
+      "title": "List of inputs",
+      "description": "List/Array of JSON objects containing values for input attributes.",
+      "default": [],
+      "examples": [
+        [
+          {
+            "value": 2,
+            "indicator_path": [
+              "SOCIO-POLICY PILLAR",
+              "Production"
+            ],
+            "value_description": "yes",
+            "indicator_name": "Food Sovereignty"
+          },
+          {
+            "value": 1,
+            "indicator_path": [
+              "SOCIO-POLICY PILLAR",
+              "Consumers"
+            ],
+            "value_description": "low",
+            "indicator_name": "Food Sovereignty"
+          }
+        ]
+      ],
+      "additionalItems": false,
+      "items": {
+        "anyOf": [
+          {
+            "$id": "#/properties/assessment_answers/items/anyOf/0",
+            "type": "object",
+            "title": "JSON object for input value",
+            "description": "A JSON Object for describing input value for particular model's attribute.",
+            "default": {},
+            "examples": [
+              {
+                "value": 2,
+                "indicator_path": [
+                  "SOCIO-POLICY PILLAR",
+                  "Production"
+                ],
+                "value_description": "yes",
+                "indicator_name": "Food Sovereignty"
+              }
+            ],
+            "required": [
+              "value",
+              "indicator_name"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "value": {
+                "$id": "#/properties/assessment_answers/items/anyOf/0/properties/value",
+                "type": "integer",
+                "title": "Value/Position",
+                "description": "Integer for the position of the value in corresponding attribute's value scale."
+              },
+              "indicator_path": {
+                "$id": "#/properties/assessment_answers/items/anyOf/0/properties/indicator_path",
+                "type": "array",
+                "title": "Path of attributes",
+                "description": "[OPTIONAL] Array of attributes names (or pats of it) that represents path (or segment of it) from the root to the corresponding attribute. Order is important - closer to the root goes first! This is useful for identifying correct attributes in case of duplicating attributes names for different attributes. For example, if a segment of the path is 'EnvironmentalPillar/Consumers_EnvironmentalPillar', following arrays are valid: ['EnvironmentalPillar','Consumers'], ['Pillar','Consumers_Environmental'], etc.",
+                "default": [],
+                "examples": [
+                  [
+                    "SOCIO-POLICY PILLAR",
+                    "Production"
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "anyOf": [
+                    {
+                      "$id": "#/properties/assessment_answers/items/anyOf/0/properties/indicator_path/items/anyOf/0",
+                      "type": "string",
+                      "title": "Attribute's name",
+                      "description": "Attribute's name.",
+                      "default": "",
+                      "examples": [
+                        "SOCIO-POLICY PILLAR",
+                        "Production"
+                      ]
+                    }
+                  ],
+                  "$id": "#/properties/assessment_answers/items/anyOf/0/properties/indicator_path/items"
+                }
+              },
+              "value_description": {
+                "$id": "#/properties/assessment_answers/items/anyOf/0/properties/value_description",
+                "type": "string",
+                "title": "Descriptive/Qualitative value",
+                "description": "[OPTIONAL] Qualitative value with descriptive name."
+              },
+              "indicator_name": {
+                "$id": "#/properties/assessment_answers/items/anyOf/0/properties/indicator_name",
+                "type": "string",
+                "title": "Attribute's name",
+                "description": "Attribute's name as provided by a model"
+              }
+            }
+          }
+        ],
+        "$id": "#/properties/assessment_answers/items"
+      }
+    }
+  }
+}

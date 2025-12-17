@@ -1,0 +1,116 @@
+@use "../../styles/variables";
+
+:host {
+    display:block;
+    width: 100%;
+    height: 42px;
+    background: variables.$color-light;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    border-top: 2px solid variables.$color-light;
+    list-style-type: none;
+    margin: 0 auto;
+    width: 1040px;
+    height: 37px;
+    
+    li {
+        float: left;
+        user-select: none;
+        margin: 0;
+        padding:0;
+
+        p {
+            color: variables.$color-dark;
+            font-family: Montserrat;
+            font-size: 15px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-top: -2px;
+        }
+    }
+
+    li.chain {
+        width: 220px;
+        height: 37px;
+        background-position: 0 9px;
+        background-repeat: no-repeat;
+        background-size: 37px 22px;
+        background-image: url('../../assets/icons/chainColor.svg');
+
+        em {
+            font-family: Montserrat;
+            font-size: 18px;
+            line-height: 13px;
+            font-weight: 900;
+            text-align: left;
+            font: normal normal 900 18px/13px Montserrat;
+            letter-spacing: 1.8px;
+            color: #707070;
+            opacity: 1;
+            display: block;
+            margin: 15px 0 0 45px;
+        }
+    }
+
+    li.link {
+        border-top: 5px solid variables.$color-light;
+        width: 132px;
+        padding-left: 40px;
+        padding-top: 9px;
+        background-position: 0 9px;
+        background-repeat: no-repeat;
+        background-size: 31px 17px;
+        cursor: pointer;
+    }
+
+    li.link.selected {
+        border-top: 5px solid variables.$color-dark;
+    }
+
+    li.hamburger {
+        width: 39px;
+        height: 30px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 20px 17px;
+        background-image: url('../../assets/icons/hamburger.svg');
+        margin: 11px 0 0 83px;
+        cursor: pointer;
+    }
+
+    #input {
+        width: 112px;
+        background-image: url('../../assets/icons/input.svg');
+        background-position: 4px 9px;
+        p {
+            margin-left: 8px;
+        }
+    }
+
+    #analysis {
+        width:186px;
+        margin-left:25px;
+        background-image: url('../../assets/icons/analysis.svg');
+        background-size: 31px 18px;
+        background-position: 7px 9px;
+        p {
+            margin-left: 6px;
+        }
+    }
+
+    #scenarios {
+        background-image: url('../../assets/icons/scenarios.svg');
+        width:150px;
+        margin-left: 22px;
+        background-size: 31px 18px;
+        background-position: -5px 9px;
+        padding-left: 33px;
+        p {
+            margin-left: -3px;
+        }
+    }
+}

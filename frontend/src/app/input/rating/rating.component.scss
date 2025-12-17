@@ -1,0 +1,271 @@
+@use "../../../styles/variables";
+
+ul {
+    color: variables.$color-white;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+    li {
+        width: 611px;
+        height: 74px;
+        line-height: 74px;
+        cursor: pointer;
+        user-select: none;
+        color: variables.$color-white;
+        border-top: 3px solid variables.$color-white;
+        display: flex;
+
+        &.environmental {
+            background-color: variables.$color-env-light;
+            span, em {
+                color: variables.$color-dark;
+            }
+
+            &.selected {
+                background-color: variables.$color-env;
+                span, em {
+                    color: variables.$color-white !important;
+                }
+            }
+        }
+
+        &.economic, &.resource-use-efficiency {
+            background-color: variables.$color-econ-light;
+            span, em {
+                color: variables.$color-dark;
+            }
+
+            &.selected {
+                background-color: variables.$color-econ;
+                span, em {
+                    color: variables.$color-white !important;
+                }
+            }
+        }
+
+        &.social, &.socio-economic {
+            background-color: variables.$color-soc-light;
+            span, em {
+                color: variables.$color-dark;
+            }
+
+            &.selected {
+                background-color: variables.$color-soc;
+                span, em {
+                    color: variables.$color-white !important;
+                }
+            }
+        }
+
+        &.red {
+            background-color: variables.$color-ind-low-lightest !important;
+
+            &.selected {
+                background-color: variables.$color-ind-low !important;
+            }
+        }
+
+
+        &.orange {
+            background-color: variables.$color-ind-medium-lightest !important;
+
+            &.selected {
+                background-color: variables.$color-ind-medium !important;
+            }
+        }
+
+
+        &.green {
+            background-color: variables.$color-ind-high-lightest !important;
+
+            &.selected {
+                background-color: variables.$color-ind-high !important;
+            }
+        }
+
+        .radio {
+            display: block;
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            border: 3px solid variables.$color-white;
+            background: variables.$color-white;
+            float: left;
+            margin: 24px;
+            flex-basis: 19px;
+            flex-grow: 0;
+        }
+        .rating-label {
+            display: inline-block;
+            margin: auto;
+            line-height: normal;
+            font-size: 21px;
+            font-weight: 300;
+            letter-spacing: 1.05px;
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+        em {
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 29px;
+            font-style: normal;
+            letter-spacing: 2.9px;
+            display: block;
+            height: 70px;
+            overflow: hidden;
+            float: right;
+            flex: 0 0 auto;
+            padding-right: 5px;
+        }
+        &.selected {
+            em {
+                padding-left: 3px;
+            }
+        }
+    }
+
+    div:hover {
+        .full {
+            display:block;
+        }
+    }
+    
+    .notop {
+        border-top: 0;
+        padding-top: 3px;
+    }
+
+    .nobottom {
+        border-bottom: 0;
+    }
+
+    .nomid {
+        border-top: 3px solid variables.$color-white;
+
+        span, em {
+            position: relative;
+            top: -3px;
+        }
+    }
+    .nomid.selected {
+        span, em {
+            top:0;
+        }
+    }
+    .nomid.notselected {
+        border-top: 0;
+        span, em {
+            top:0;
+        }
+    }
+
+    .first {
+        border-bottom: 3px transparent;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .penultimate {
+        border-bottom: 3px solid variables.$color-white;
+    }
+
+    .last {
+        border-radius: 0;
+        border-bottom: 3px solid white;
+    }
+
+    .selected {
+        width: 648px;
+        margin: 0 -20px;
+        padding: 0 14px 0 17px;
+        border: 3px solid variables.$color-dark;
+        border-radius: 15px;
+        
+        .radio {
+            background: variables.$color-dark;
+        }
+    }
+
+    .full {
+        display: none;
+        z-index: 200;
+        position: absolute;
+        background: #fff;
+        color: #000;
+        font-size: 16px;
+        line-height: 16px;
+        border: 3px solid black;
+        opacity: 1.0;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: -20px;
+    }
+
+    .next {
+        background-color: variables.$color-very-light;
+        color: variables.$color-medium;
+        position: relative;
+        border-radius: 0 0 15px 15px;
+        cursor: pointer;
+        display: block;
+
+
+        &.enabled {
+            span {
+                width: 300px;
+                color: variables.$color-dark;
+                &.prev-label {
+                    background-image: url('../../../assets/icons/larrow.svg') !important;
+                }
+                &.next-label {
+                    background-image: url('../../../assets/icons/rarrow.svg') !important;
+                }
+            }
+        }
+
+        span {
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 2.1px;
+            text-transform: uppercase;
+            display:inline-block;
+
+            &.prev-label {
+                border-right: 2px solid variables.$color-white;
+
+                background-image: url('../../../assets/icons/larrow-light.svg');
+                background-repeat: no-repeat;
+                background-position: 250px 27px;
+                padding-left: 25px;
+            }
+
+            &.next-label {
+                border-left: 2px solid variables.$color-white;
+                background-image: url('../../../assets/icons/rarrow-light.svg');
+                background-repeat: no-repeat;
+                background-position: 32px 27px;
+                padding-left: 82px;
+            }
+        }
+    }
+
+    .next:after {
+        content: '';
+        display:block;
+        width: 611px;
+        height:10px;
+        background-color: variables.$color-very-light;
+        position:relative;
+        margin-top: -10px;
+        z-index: -10;
+        top:-74px;
+    }
+}
+
+em {
+    text-transform: capitalize;
+}

@@ -1,0 +1,8 @@
+<ul>
+    <li [ngClass]="writeClass()" (click)="toggleWrite()">
+        <svg-icon [src]="baseHref + 'assets/icons/permissions/write.svg'"></svg-icon>
+    </li>
+    <li [ngClass]="readClass()" (click)="toggleRead()">
+        <svg-icon [src]="baseHref + 'assets/icons/permissions/read.svg'"></svg-icon>
+    </li>
+</ul>

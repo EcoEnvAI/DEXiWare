@@ -1,0 +1,9 @@
+@use "../about/about.component.scss";
+
+.bottomHelp {
+    margin: 30px;
+}
+
+::ng-deep .mat-dialog-container {
+    height: 650px;    
+}

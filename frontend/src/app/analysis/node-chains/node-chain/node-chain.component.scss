@@ -1,0 +1,130 @@
+@use "../../../../styles/variables";
+
+
+.analysis {
+    height: 38px;
+
+    li {
+        width: 70px;
+
+        div {
+            span {
+                width: 38px;
+                height: 38px;
+                border: none;
+            }
+
+            h3 {
+                display: none;
+            }
+        }
+
+        svg {
+            position:relative;
+            top:-36px;
+            z-index:-100;
+            stroke: variables.$color-white;
+
+            #outline {
+                fill: #fff;
+            }
+
+            line {
+                stroke: variables.$color-medium;
+            }
+        }
+
+        svg-icon {
+            position: relative;
+            top: -8px;
+            left: 8px;
+            width: 20px;
+            height: 38px;
+            display: block;
+            overflow: hidden;
+        }
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    li {
+        float:left;
+        width:256px;
+
+        div {
+            span {
+                display: block;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                border: 2px solid variables.$color-dark;
+                stroke: variables.$color-dark;
+                fill: variables.$color-white;
+                margin:0 auto;
+            }
+
+            h3 {
+                color: variables.$color-dark;
+                font-family: Montserrat;
+                font-size:14px;
+                font-weight:600;
+                text-transform: uppercase;
+                letter-spacing:2.1px;
+                text-align:center;
+                margin:0 0 5px 0;
+                padding:0;
+                height:45px;
+                width:266px;
+            }
+
+            .low {
+                background: variables.$color-ind-low;
+            }
+
+            .medium {
+                background: variables.$color-ind-medium;
+            }
+
+            .high {
+                background: variables.$color-ind-high;
+            }
+
+            .undefined {
+                background: variables.$color-ind-undefined;
+            }
+
+            .low-medium {
+                background-image: linear-gradient(135deg, variables.$color-ind-low 25%, variables.$color-ind-medium 25%, variables.$color-ind-medium 50%, variables.$color-ind-low 50%, variables.$color-ind-low 75%, variables.$color-ind-medium 75%, variables.$color-ind-medium 100%);
+                background-size: 20px 20px;
+            }
+
+            .medium-high {
+                background-image: linear-gradient(135deg, variables.$color-ind-medium 25%, variables.$color-ind-high 25%, variables.$color-ind-high 50%, variables.$color-ind-medium 50%, variables.$color-ind-medium 75%, variables.$color-ind-high 75%, variables.$color-ind-high 100%);
+                background-size: 20px 20px;
+            }
+
+            .low-medium-high {                
+                background-image: linear-gradient(135deg, variables.$color-ind-low 16.76%, variables.$color-ind-medium 33.33%, variables.$color-ind-high 50%, variables.$color-ind-low 50%, variables.$color-ind-low 66.67%, variables.$color-ind-medium 83.33%, variables.$color-ind-high 100%);
+                background-size: 20px 20px;
+            }
+        }
+        svg {
+            position:relative;
+            top:-76px;
+            z-index:-100;
+            stroke: variables.$color-dark;
+        }
+    }
+}

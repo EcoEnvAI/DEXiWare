@@ -1,0 +1,163 @@
+@use "../../../styles/variables";
+
+    .low {
+        background: variables.$color-ind-low-lightest;
+    }
+    .low.selected, .low.clicked {
+        background: variables.$color-ind-low;
+    }
+
+    .medium {
+        background: variables.$color-ind-medium-lightest;
+    }
+    .medium.selected, .medium.clicked {
+        background: variables.$color-ind-medium;
+    }
+
+    .medium-low {
+        background: variables.$color-ind-medium-lightest;
+        
+    }
+    .medium-low.selected {
+        background: variables.$color-ind-medium;
+    }
+
+    .medium-high {
+        background: variables.$color-ind-medium-lightest;
+        
+    }
+    .medium-high.selected {
+        background: variables.$color-ind-medium;
+    }
+
+    .high {
+        background: variables.$color-ind-high-lightest;
+    }
+    .high.selected, .high.clicked {
+        background: variables.$color-ind-high;
+    }
+
+    .weak {
+        background: variables.$color-ind-low-lightest;
+    }
+    .weak.selected {
+        background: variables.$color-ind-low;
+    }
+    .strong {
+        background: variables.$color-ind-high-lightest;
+    }
+    .strong.selected {
+        background: variables.$color-ind-high;
+    }
+
+    .yes {
+        background: variables.$color-ind-high-lightest;
+    }
+    .yes.selected {
+        background: variables.$color-ind-high;
+    }
+    .no {
+        background: variables.$color-ind-low-lightest;
+    }
+    .no.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .presence {
+        background: variables.$color-ind-high-lightest;
+    }
+    .presence.selected {
+        background: variables.$color-ind-high;
+    }
+    .absence {
+        background: variables.$color-ind-low-lightest;
+    }
+    .absence.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .present {
+        background: variables.$color-ind-high-lightest;
+    }
+    .present.selected {
+        background: variables.$color-ind-high;
+    }
+    .absent {
+        background: variables.$color-ind-low-lightest;
+    }
+    .absent.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .managed {
+        background: variables.$color-ind-high-lightest;
+    }
+    .managed.selected {
+        background: variables.$color-ind-high;
+    }
+    .not-managed {
+        background: variables.$color-ind-low-lightest;
+    }
+    .not-managed.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .achieved {
+        background: variables.$color-ind-high-lightest;
+    }
+    .achieved.selected {
+        background: variables.$color-ind-high;
+    }
+    .not-achieved {
+        background: variables.$color-ind-low-lightest;
+    }
+    .not-achieved.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .included {
+        background: variables.$color-ind-high-lightest;
+    }
+    .included.selected {
+        background: variables.$color-ind-high;
+    }
+    .excluded {
+        background: variables.$color-ind-low-lightest;
+    }
+    .excluded.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .acceptable {
+        background: variables.$color-ind-high-lightest;
+    }
+    .acceptable.selected {
+        background: variables.$color-ind-high;
+    }
+    .unacceptable {
+        background: variables.$color-ind-low-lightest;
+    }
+    .unacceptable.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .red {
+        background: variables.$color-ind-low-lightest;
+    }
+    .red.selected {
+        background: variables.$color-ind-low;
+    }
+
+    .orange {
+        background: variables.$color-ind-medium-lightest;
+    }
+    .orange.selected {
+        background: variables.$color-ind-medium;
+    }
+
+    .green {
+        background: variables.$color-ind-high-lightest;
+    }
+    .green.selected {
+        background: variables.$color-ind-high;
+    }

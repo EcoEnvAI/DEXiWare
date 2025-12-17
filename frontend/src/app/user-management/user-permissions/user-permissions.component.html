@@ -1,0 +1,8 @@
+<ul>
+    <li class="name">
+        <div>{{indicator.description.name}}</div>
+    </li>
+    <li *ngFor="let user of users">
+        <true-permission-selector [values]="indicator.permissions[user.id]" (change)="setUserPermission(user)"></true-permission-selector>
+    </li>
+</ul>

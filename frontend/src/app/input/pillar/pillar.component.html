@@ -1,0 +1,41 @@
+<div [ngClass]="pillarClass()">
+    <ul *ngIf="!config.pillar_models">
+        <li *ngFor="let node of nodes" [ngClass]="nodeClass(node)">
+            <div (click)="selectNode(node)">
+                <span>{{node.description.description}}</span>
+            </div>
+                
+            <true-chain [enabled]="nodeEnabled(node)" [activeItem]="selectedIndicator" [items]="node.indicators" (select)="selectIndicator(node, $event)"></true-chain>
+        </li>
+    </ul>
+
+    <ul *ngIf="config.pillar_models">
+        <li *ngFor="let node of pillarNodes" [ngClass]="nodeClass(node)">
+            <div (click)="selectNode(node)">
+                <span>{{node.description.description}}</span>
+            </div>
+                
+            <true-chain [enabled]="nodeEnabled(node)" [activeItem]="selectedIndicator" [items]="node.indicators" (select)="selectIndicator(node, $event)"></true-chain>
+        </li>
+    </ul>
+
+    <div *ngIf="selectedIndicator">
+        <h1>{{selectedIndicator.description.name}}</h1>
+        <div class="compact">
+            <true-sub-themes [theme]="selectedIndicator.Theme"></true-sub-themes>
+            <div><h2 *ngIf="config.pillar_models">Subcategory</h2><h2 *ngIf="!config.pillar_models">Link</h2><p>{{selectedNode.description.description}} ({{selectedNodeDescriptor}})</p></div>
+        </div>
+        <div class="split">
+            <div class="left">
+                <h2>Description</h2>
+                <p [innerHTML]="selectedIndicator.description.description | replaceLinks"></p>
+            </div>
+            <div class="right">
+                <h2>Metrics</h2>
+                <p [innerHTML]="selectedIndicator.description.metrics | replaceLinks"></p>
+                <h2>Ratings</h2>
+                <true-rating (prevClick)="prevIndicator()" (nextClick)="nextIndicator()" (updated)="recalcPct()" [assessmentId]="assessmentId" [indicator]="selectedIndicator" [pillar]="pillarClass()"></true-rating>
+            </div>
+        </div>
+    </div>
+</div>

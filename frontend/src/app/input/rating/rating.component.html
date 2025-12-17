@@ -1,0 +1,9 @@
+<ul>
+    <ng-template ngFor let-threshold [ngForOf]="indicator.Indicator_thresholds">
+        <div>
+        <li [ngClass]="itemClass(threshold)" (click)="select(threshold)"><span class="radio"></span><span class="rating-label">{{chop(threshold.description.description)}}</span> <em>{{threshold.description.name}}</em></li>
+        <span *ngIf="chop(threshold.description.description) != threshold.description.description" class="full">{{threshold.description.description}}</span>
+        </div>
+    </ng-template>
+    <li class="next" [ngClass]="nextClass()"><span class="prev-label" (click)="prev()">Previous indicator</span><span class="next-label" (click)="next()">Next indicator</span></li>
+</ul>

@@ -1,0 +1,67 @@
+@use "../../styles/variables";
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: variables.$color-dark;
+    display: block;
+    line-height: 54px;
+    margin: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.button {
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1.05px;
+    display: block;
+    border: 0;
+    background: none;
+    text-transform: uppercase;
+    background-position: 34px 5px;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/icons/rarrow.svg');
+    padding-left: 80px;
+    margin-top: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+label {
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 600;
+    letter-spacing: 1.05px;
+    display: block;
+    border: 0;
+    background: none;
+    text-transform: uppercase;
+    padding-left: 80px;
+    margin-top: 6px;
+    cursor: pointer;
+    user-select: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 50px 0 0 20px;
+}
+
+input[type='checkbox'] {
+    margin: 8px 0 0 37px;
+    display: block;
+    float: left;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}

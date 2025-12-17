@@ -1,0 +1,166 @@
+@use "../../styles/variables";
+
+:host {
+    height: calc(100% - 200px);
+    display: block;
+}
+
+.center {
+    position: relative;
+    width: 484px;
+    text-align: center;
+    margin: 0 auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h1 {
+    padding-top: 60px;    
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: 3.13px;
+    text-align: center;
+}
+
+h2 {
+    color: variables.$color-medium;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-align:center;
+}
+
+form {
+    margin-top: 40px;
+
+    input[type=text], input[type=password] {
+        width: 213px;
+        height: 41px;
+        border-radius: 28px;
+        border: 0px variables.$color-light;
+        background-color: variables.$color-light;
+        box-shadow: none;
+        outline: none;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        color: variables.$color-dark;
+        margin: 0 20px;
+    }
+
+    input[type='checkbox'] {
+        width: 16px;
+        height: 16px;
+        margin: 2px 8px 0 37px;
+        display: block;
+        float: left;
+        cursor: pointer;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    label {
+        color: variables.$color-medium;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+
+        a {
+            color: variables.$color-medium;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.1px;
+            text-decoration: underline;
+        }
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: variables.$color-medium;
+        opacity: 1; /* Firefox */
+    }
+
+    .form-group {
+        margin-bottom:6px;
+        display: inline-block;
+    }
+
+    .submit {
+        button {
+            display:block;
+            width:77px;
+            height:40px;
+            margin: 0 auto;
+            border-radius: 28px;
+            border: 2px solid variables.$color-medium;
+            background-image: url('../../assets/icons/checkmark.svg');
+            background-position: 30px 13px;
+            background-repeat:no-repeat;
+            background-color: variables.$color-medium;
+        }
+    }
+}
+
+.heading {
+    margin-bottom: 23px;
+    span {
+        color: variables.$color-dark;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        text-align:center;
+    }
+    .instruction {
+        color: variables.$color-medium;
+        margin-top:3px;
+        display: block;
+    }
+}
+
+.link {
+    color: variables.$color-medium;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;   
+}
+
+.help-block {
+    font-family: Montserrat;
+    font-size: 14px;
+}
+
+.bottom-logo-section {
+    margin-top: 100px;
+}
+
+
+.dexiware-logo {
+    margin-top: 5px;
+    div{
+        color: variables.$color-dark;
+        font-family: Montserrat !important;
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 3.13px;
+        text-align:center;
+        margin: 10px;
+    }
+    img {
+        width: 30%;
+        
+    }
+}

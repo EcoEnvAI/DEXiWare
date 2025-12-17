@@ -1,0 +1,19 @@
+
+<h1 *ngIf="!isReady">Preparing PDF export.</h1>
+<h2 *ngIf="!isReady">Please wait.</h2>
+<h1 *ngIf="isReady">PDF export ready</h1>
+<h2 *ngIf="rendering">Rendering...</h2>
+<button [ngClass]="{'enabled': isReady && !rendering}" (click)="download()">Download PDF</button>
+<div #content id="content">
+    <div class="page">
+        <h2>{{date}}</h2>
+        <true-input></true-input>
+    </div>
+
+    <div #analysis class="page" id="analysis">
+        <h2>{{date}}</h2>
+        <true-analysis (loaded)="ready()"></true-analysis>
+    </div>
+
+    <true-scenarios [paged]="true" [date]="date"></true-scenarios>
+</div>

@@ -1,0 +1,103 @@
+<div class="center">
+  <h1 *ngIf="!config.pillar_models">Pathfinder</h1>
+  <h2 *ngIf="!config.pillar_models">for agri-food chains</h2>
+  <h1 *ngIf="config.pillar_models"></h1>
+  <form name="form" *ngIf="state==''" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && (!username.valid || invalidUser || unconfirmedUser) }">
+      <input type="text" class="form-control" name="username" placeholder="email" [(ngModel)]="model.username" #username="ngModel" autocomplete="username" required />
+      <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+      <div *ngIf="f.submitted && invalidUser" class="help-block">Invalid username</div>
+      <div *ngIf="f.submitted && unconfirmedUser" class="help-block">Email not confirmed <a href="#" (click)="resendConfirmationEmail($event)">resend link</a></div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && (!password.valid || invalidPass) }">
+      <input type="password" class="form-control" name="password" placeholder="password" [(ngModel)]="model.password" #password="ngModel" autocomplete="password" required />
+      <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+      <div *ngIf="f.submitted && invalidPass" class="help-block">Invalid password</div>
+    </div>
+    <div class="submit">
+      <button></button>
+    </div>
+
+    <span class="link" (click)="openPasswordReset()">Forgot your password?</span>
+    <span class="link" *ngIf="config.registration" (click)="openRegistration()">Don't have an account?</span>
+  </form>
+
+  <form name="form" *ngIf="state=='register'" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
+    <div class="heading">
+      <span>Don't have an account?</span>
+      <span class="instruction">Enter your email address and desired password to register a new account.</span>
+      <span *ngIf="f.submitted && invalidUser">***</span>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+      <input type="text" class="form-control" name="username" placeholder="your email" [(ngModel)]="model.username" #username="ngModel" autocomplete="username" required />
+      <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+      <div *ngIf="f.submitted && invalidUser" class="help-block">Invalid username</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+      <input type="password" class="form-control" name="password" placeholder="enter password" [(ngModel)]="model.password" #password="ngModel" autocomplete="new-password" required />
+      <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && password.valid && (!password2.valid || invalidPass) }">
+      <input type="password" class="form-control" name="password2" placeholder="repeat password" [(ngModel)]="model.password2" #password2="ngModel" autocomplete="new-password" required />
+      <div *ngIf="f.submitted && password.valid && !password2.valid" class="help-block">Confirm password</div>
+      <div *ngIf="f.submitted && password.valid && password2.valid && invalidPass" class="help-block">Passwords must match</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !model.agree }">
+      <input type="checkbox" class="form-control" name="agree" id="agree" [(ngModel)]="model.agree" />
+      <label for="agree">I agree to the <a href="/true/assets/pdf/True_Privacy_Policy.pdf" target="_blank">privacy policy</a> and <a href="/true/assets/pdf/True_Terms_Conditions.pdf" target="_blank">terms of use</a></label>
+      <div *ngIf="f.submitted && !model.agree" class="help-block">You must agree before continuing</div>
+    </div>
+
+    <div class="submit">
+      <button></button>
+    </div>
+
+    <span class="link" (click)="openDefault()">I already have an account</span>
+  </form>
+
+  <form name="form" *ngIf="state=='forgotPassword'" (ngSubmit)="f.form.valid && sendPasswordReset()" #f="ngForm" novalidate>
+    <div class="heading">
+      <span>Forgot your password?</span>
+      <span class="instruction">Enter your email address to receive a recovery email</span>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+      <input type="text" class="form-control" name="username" placeholder="email" [(ngModel)]="model.username" #username="ngModel" required />
+      <div *ngIf="f.submitted && !username.valid" class="help-block">Email is required</div>
+      <div *ngIf="invalidUser" class="help-block">Unknown user</div>
+    </div>
+
+    <div class="submit">
+      <button></button>
+    </div>
+
+    <span class="link" (click)="openDefault()">back</span>
+  </form>
+
+  <form name="form" *ngIf="state=='resetSent'">
+    <div class="heading">
+      <span>Check your email</span>
+      <span class="instruction">And set your new password using the link we sent you</span>
+    </div>
+
+    <span class="link" (click)="openDefault()">back</span>
+  </form>
+  
+  <form name="form" *ngIf="state=='registrationSent'">
+    <div class="heading">
+      <span>Check your email</span>
+      <span class="instruction">Click on the confirmation link we've sent you to start using your account.</span>
+    </div>
+
+    <span class="link" (click)="openDefault()">Back to login</span>
+  </form>    
+  
+  <div class="bottom-logo-section" *ngIf="state!='register'">
+    <h2>Powered by</h2>
+    <h3 class="dexiware-logo">
+      <img src="assets/icons/chainColor.svg"/>
+      <div>
+        DEXiWare
+      </div>
+    </h3>
+  </div>
+</div>

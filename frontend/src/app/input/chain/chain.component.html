@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let item of items; let idx = index">
+        <true-bullet (select)="selectItem(item)" [active]="activeItem && item.id == activeItem.id" [complete]="item.value != null" [enabled]="enabled" [first]="idx==0" [last]="idx==items.length-1" [text]="item.description.name"></true-bullet>
+    </li>
+</ul>
+

@@ -1,0 +1,16 @@
+@use "../../styles/variables";
+@use "../login/login.component.scss";
+
+h3 {
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+}
+
+a {
+    color: variables.$color-dark;
+    font-family: Montserrat;
+    font-size: 12px;
+}

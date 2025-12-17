@@ -1,0 +1,341 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "generation_alternatives_schema",
+  "type": "object",
+  "title": "Generation of alternatives operation validation schema",
+  "description": "Validation schema for operation that generates alternatives",
+  "default": {},
+  "examples": [
+    {
+      "operation": "generation",
+      "model": "AgriFoodChainIntegrated",
+      "model_path": "models/AgriFoodChainIntegrated.dxi",
+      "goal": "AgriFoodChain",
+      "generator": {
+        "direction": "improve",
+        "max_levels": 2,
+        "max_steps": 1,
+        "unidirectional": true,
+        "constant_attributes": [
+          "Production_EnvironmentalPillar",
+          "/Production/Production_SocialPolicyPillar"
+        ],
+        "max_time": 5000,
+        "max_solutions": 500,
+        "report_solutions": 10
+      },
+      "alternative": {
+        "alternative": "ChainMedium",
+        "inputs": [
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Production_EnvironmentalPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Processing_EnvironmentalPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Tranportation_EnvironmentalPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Market_EnvironmentalPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Consumers_EnvironmentalPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Production_EconomicPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Processing_EconomicPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Tranportation_EconomicPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Market_EconomicPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Consumers_EconomicPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Production_SocialPolicyPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Processing_SocialPolicyPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Tranportation_SocialPolicyPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Market_SocialPolicyPillar"
+          },
+          {
+            "values": [
+              "Medium"
+            ],
+            "attribute": "Consumers_SocialPolicyPillar"
+          }
+        ]
+      }
+    }
+  ],
+  "required": [
+    "operation",
+    "model",
+    "model_path",
+    "goal",
+    "generator",
+    "alternative"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "operation": {
+      "$id": "#/properties/operation",
+      "type": "string",
+      "title": "The operation schema",
+      "description": "Operation to be performed",
+      "enum": ["generation"],
+      "default": "generation"
+    },
+    "model": {
+      "$id": "#/properties/model",
+      "type": "string",
+      "title": "Model name",
+      "description": "Model to be used in evaluation"
+    },
+    "model_path": {
+      "$id": "#/properties/model_path",
+      "type": "string",
+      "title": "DEX model path",
+      "description": "Absolute path to the DEX model"
+    },
+    "goal": {
+      "$id": "#/properties/goal",
+      "type": "string",
+      "title": "The goal schema",
+      "description": "Output attribute to be optimized"
+    },
+    "generator": {
+      "$id": "#/properties/generator",
+      "type": "object",
+      "title": "The generator schema",
+      "description": "Generator-specific settings",
+      "default": {},
+      "required": [
+        "direction",
+        "max_levels",
+        "max_steps",
+        "unidirectional",
+        "constant_attributes",
+        "max_time",
+        "max_solutions",
+        "report_solutions"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "$id": "#/properties/generator/properties/direction",
+          "type": "string",
+          "title": "The direction schema",
+          "description": "Direction in which optimization should be directed",
+          "enum": ["improve","degrade"]
+        },
+        "max_levels": {
+          "$id": "#/properties/generator/properties/max_levels",
+          "type": "integer",
+          "title": "The max_levels schema",
+          "description": "Maximum number of levels to be considered for optimization",
+          "default": 2
+        },
+        "max_steps": {
+          "$id": "#/properties/generator/properties/max_steps",
+          "type": "integer",
+          "title": "The max_steps schema",
+          "description": "Max_step setting required by the library",
+          "default": 1
+        },
+        "unidirectional": {
+          "$id": "#/properties/generator/properties/unidirectional",
+          "type": "boolean",
+          "title": "The unidirectional schema",
+          "description": "How steps are counted, is it unidirectional or both directions are considered as change",
+          "default": true,
+          "enum": [true,false]
+        },
+        "constant_attributes": {
+          "$id": "#/properties/generator/properties/constant_attributes",
+          "type": "array",
+          "title": "The constant_attributes schema",
+          "description": "List of attributes (or their path, that need to be fixed and not changed in while generating solutions",
+          "default": [],
+          "additionalItems": false,
+          "items": {
+            "anyOf": [
+              {
+                "$id": "#/properties/generator/properties/constant_attributes/items/anyOf/0",
+                "type": "string",
+                "title": "The first anyOf schema",
+                "description": "Path or name of attribute to be fixed"
+              }
+            ],
+            "$id": "#/properties/generator/properties/constant_attributes/items"
+          }
+        },
+        "max_time": {
+          "$id": "#/properties/generator/properties/max_time",
+          "type": "integer",
+          "title": "The max_time schema",
+          "description": "Maximum time allowed for the algorithm to search for solutions - in ms",
+          "default": 5000
+        },
+        "max_solutions": {
+          "$id": "#/properties/generator/properties/max_solutions",
+          "type": "integer",
+          "title": "The max_solutions schema",
+          "description": "Maximum number of solutions to be explored",
+          "default": 500
+        },
+        "report_solutions": {
+          "$id": "#/properties/generator/properties/report_solutions",
+          "type": "integer",
+          "title": "The report_solutions schema",
+          "description": "Number of solutions to be returned back",
+          "default": 10
+        }
+      }
+    },
+    "alternative": {
+      "$id": "#/properties/alternative",
+      "type": "object",
+      "title": "The alternative schema",
+      "description": "Alternative that describe the initial state, out of which solutions need to be generated",
+      "default": {},
+      "required": [
+        "alternative",
+        "inputs"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "alternative": {
+          "$id": "#/properties/alternative/properties/alternative",
+          "type": "string",
+          "title": "The alternative schema",
+          "description": "Alternative name"
+        },
+        "inputs": {
+          "$id": "#/properties/alternative/properties/inputs",
+          "type": "array",
+          "title": "The inputs schema",
+          "description": "List of inputs that defines the initial state",
+          "default": [],
+          "additionalItems": false,
+          "items": {
+            "anyOf": [
+              {
+                "$id": "#/properties/alternative/properties/inputs/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "Attribute value",
+                "default": {},
+                "required": [
+                  "values"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "values": {
+                    "$id": "#/properties/alternative/properties/inputs/items/anyOf/0/properties/values",
+                    "type": "array",
+                    "title": "The values schema",
+                    "description": "Value of input attribute",
+                    "default": [],
+                    "additionalItems": false,
+                    "items": {
+                      "anyOf": [
+                        {
+                          "$id": "#/properties/alternative/properties/inputs/items/anyOf/0/properties/values/items/anyOf/0",
+                          "type": "string",
+                          "title": "The first anyOf schema",
+                          "description": "String-based value"
+                        },
+                        {
+                          "$id": "#/properties/alternative/properties/inputs/items/anyOf/0/properties/values/items/anyOf/1",
+                          "type": "number",
+                          "title": "The second anyOf schema",
+                          "description": "Integer-based value that represents the position of value in value scale"
+                        }
+                      ],
+                      "$id": "#/properties/alternative/properties/inputs/items/anyOf/0/properties/values/items"
+                    }
+                  },
+                  "attribute": {
+                    "$id": "#/properties/alternative/properties/inputs/items/anyOf/0/properties/attribute",
+                    "type": "string",
+                    "title": "The attribute schema",
+                    "description": "Attribute name"
+                  },
+                  "path": {
+                    "$id": "#/properties/alternative/properties/inputs/items/anyOf/0/properties/path",
+                    "type": "string",
+                    "title": "The attribute schema",
+                    "description": "Path of input attribute"
+                  }
+                },
+                "oneOf": [
+                  {
+                    "required": [ "attribute" ]
+                  },
+                  {
+                    "required": [ "path" ]
+                  }
+                ]
+              }
+            ],
+            "$id": "#/properties/alternative/properties/inputs/items"
+          }
+        }
+      }
+    }
+  }
+}

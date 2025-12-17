@@ -1,0 +1,48 @@
+<div *ngIf="loggedIn">
+    <ul>
+        <li class="chain"><em>DEXiWare</em></li>
+        <li class="link" (click)="navigate('input')" [ngClass]="activeClass('input')" id="input">
+            <p>INPUT</p>
+        </li>
+        <li class="link" (click)="navigate('analysis')" [ngClass]="activeClass('analysis')" id="analysis">
+            <p>ASSESSMENT</p>
+        </li>
+        <li class="link" (click)="navigate('scenarios')" [ngClass]="activeClass('scenarios')" id="scenarios">
+            <p>SCENARIOS</p>
+        </li>
+        <li class="hamburger" id="menu" [matMenuTriggerFor]="menu">
+            <p></p>
+        </li>
+    </ul>
+
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item class="readonly">
+            <mat-icon>account_circle</mat-icon>
+            <span class="dropdown-menu-item">{{authService.username()}}</span>
+        </button>
+        <button *ngIf="authService.hasRole('Admin') || authService.hasRole('User')" mat-menu-item (click)="usermanagement()">
+            <mat-icon>account_circle</mat-icon>
+            <span class="dropdown-menu-item">USER MANAGEMENT</span>
+        </button>
+        <button mat-menu-item (click)="chooseAssessment()">
+            <i class="fas fa-clipboard-list"></i>
+            <span class="dropdown-menu-item">SELECT ASSESSMENT</span>
+        </button>
+        <button mat-menu-item (click)="export()">
+            <i class="fas fa-file-pdf"></i>
+            <span class="dropdown-menu-item">EXPORT</span>
+        </button>
+        <button mat-menu-item (click)="help()">
+            <i class="fas fa-question-circle"></i>
+            <span class="dropdown-menu-item">HELP</span>
+        </button>
+        <button mat-menu-item (click)="about()">
+            <i class="fas fa-info-circle"></i>
+            <span class="dropdown-menu-item">ABOUT</span>
+        </button>
+        <button *ngIf="!config.anonymous" mat-menu-item (click)="logout()">
+            <mat-icon>login</mat-icon>
+            <span class="dropdown-menu-item">LOGOUT</span>
+        </button>
+    </mat-menu>
+</div>

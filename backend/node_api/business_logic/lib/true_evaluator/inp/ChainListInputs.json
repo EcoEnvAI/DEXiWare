@@ -1,0 +1,5 @@
+{
+    "operation": "list_inputs",
+    "model": "AgriFoodChainIntegrated",
+    "model_path": "models/AgriFoodChainIntegrated.dxi",
+}

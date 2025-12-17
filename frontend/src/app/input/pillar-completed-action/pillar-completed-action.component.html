@@ -1,0 +1,5 @@
+<h1 *ngIf="!incomplete">You have completed data for all indicators.</h1>
+<h1 *ngIf="incomplete">You have completed {{completed}} / {{total}} indicators for this {{pillarName}}.</h1>
+<div class="btn left" *ngIf="incomplete" (click)="inputMissing()">ENTER MISSING DATA</div>
+<div class="btn right" *ngIf="!last" (click)="next()">CONTINUE TO NEXT {{pillarNameUppercase}}</div>
+<div class="btn up" (click)="analyze()">{{mainAction}}</div>

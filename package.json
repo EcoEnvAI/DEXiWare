@@ -1,0 +1,15 @@
+{
+  "name": "dexiware",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix backend\" \"npm run start --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "swagger-ui-express": "^4.5.0",
+    "swagger-jsdoc": "^6.0.0"
+  }
+}

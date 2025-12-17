@@ -1,0 +1,59 @@
+<div [ngClass]="{loading: isLoading}" *ngIf="!config.pillar_models">
+    <true-breadcrumbs [subset]="this.config.subset" [pillar]="selectedPillar" [indicator]="selectedIndicator" [assessmentName]="assessmentName"></true-breadcrumbs>
+    <div *ngIf="!selectedPillar">
+        <true-review-ratings *ngIf="assessmentId" [assessmentId]="assessmentId" [pillars]="pillars" (selectPillar)="selectPillar($event)" (selectIndicator)="selectIndicator($event)"></true-review-ratings>
+    </div>
+    <div *ngIf="selectedPillar">
+        <true-pillar-selector [pillars]="pillars" [selectedPillar]="selectedPillar" (select)="selectPillar($event)"></true-pillar-selector>
+        <true-pillar [assessmentId]="assessmentId" [pillar]="selectedPillar" [indicator]="selectedIndicator" (update)="updateSelectedPillar($event)" (complete)="next($event)"></true-pillar>
+    </div>
+</div>>
+
+<div [ngClass]="{loading: isLoading}" *ngIf="config.pillar_models">
+    <div *ngIf="selectedSubset">
+        <true-breadcrumbs [subset]="this.config.subset" [pillar]="selectedPillar" [indicator]="selectedIndicator" [assessmentName]="assessmentName"></true-breadcrumbs>
+        <div *ngIf="!selectedPillar">
+            <true-review-ratings *ngIf="assessmentId" [assessmentId]="assessmentId" [pillars]="pillars" (selectPillar)="selectPillar($event)" (selectIndicator)="selectIndicator($event)"></true-review-ratings>
+        </div>
+        <div *ngIf="selectedPillar">
+            <true-pillar-selector [pillars]="pillars" [selectedPillar]="selectedPillar" (select)="selectPillar($event)"></true-pillar-selector>
+            <true-pillar [assessmentId]="assessmentId" [pillar]="selectedPillar" [(indicator)]="selectedIndicator" (update)="updateSelectedPillar($event)" (complete)="next($event)"></true-pillar>
+        </div>
+    </div>
+    <div class="subset-selector" *ngIf="!selectedSubset">
+        <div class="centered container" *ngIf="greenhouseSelection">
+            <h2>Resource Amplifier</h2>
+            <h1>What kind of greenhouse?</h1>
+
+            <div class="buttons">
+                <div class="button left" (click)="selectSubset('GREENHOUSE_SOILBASE')">
+                    <em>SOILBASE PRODUCTION</em>
+                    <span>(START EVALUATION)</span>
+                </div>
+
+                <div class="button right" (click)="selectSubset('GREENHOUSE_HYDROPONICS')">
+                    <em>HYDROPONICS PRODUCTION</em>
+                    <span>(START EVALUATION)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="centered container" *ngIf="!greenhouseSelection">
+            <h2>Resource Amplifier</h2>
+            <h1>How do you produce your tomatoes?</h1>
+
+            <div class="buttons">
+                <div class="button left" (click)="selectSubset('FIELD')">
+                    <em>FIELD PRODUCTION</em>
+                    <span>(START EVALUATION)</span>
+                </div>
+            
+                <div class="button right" (click)="displayGreenhouseSelection()">
+                    <em>GREENHOUSE PRODUCTION</em>
+                    <span>(START EVALUATION)</span>
+                </div>
+            </div>
+        </div>
+        <div class="centered" *ngIf="greenhouseSelection"><a href="#" (click)="back()">BACK</a></div>
+    </div>
+</div>

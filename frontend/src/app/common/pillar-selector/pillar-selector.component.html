@@ -1,0 +1,9 @@
+<ul class="pillar-heading" [ngClass]="class">
+    <li *ngFor="let pillar of pillars" [ngClass]="pillarClass(pillar)" (click)="selectPillar(pillar)">
+        <div>
+            <true-circular-progress [pct]="pillar.pct" bgWidth="3" strokeWidth="7" [icon]="pillarIcon(pillar)" [iconSize]="pillarIconSize(pillar)"></true-circular-progress>
+            <span>{{pillar.description.name | max2words}}</span>
+        </div>
+        <em>{{pillar.description.name}}</em>
+    </li>
+</ul>

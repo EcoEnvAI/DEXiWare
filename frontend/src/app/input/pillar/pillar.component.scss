@@ -1,0 +1,178 @@
+@use "../../../styles/variables";
+
+::ng-deep .economic, .resource-use-efficiency {
+    h2 {
+        color: variables.$color-econ;
+    }
+}
+
+::ng-deep .environmental {
+    h2 {
+        color: variables.$color-env;
+    }
+}
+
+::ng-deep .social, .socio-economic {
+    h2 {
+        color: variables.$color-soc;
+    }
+}
+
+.economic, .resource-use-efficiency {
+    ul {
+        background-color: variables.$color-econ-light;
+    }
+}
+
+.environmental {
+    ul {
+        background-color: variables.$color-env-light;
+    }
+}
+.social, .socio-economic {
+    ul {
+        background-color: variables.$color-soc-light;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 25px 5px;
+    padding: 20px 0 20px 0;
+
+    li {
+        background-position: 0 center;
+        background-repeat: no-repeat;
+        height: 39px;
+        display: flex;
+        margin-left: 12px;
+
+        div {
+            height: 36px;
+            line-height: 36px;
+            width: 175px;
+            display: inline-block;
+            cursor: pointer;
+            user-select: none;
+
+            span {
+                font-family: Montserrat;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                color: variables.$color-medium;
+                width: 160px;
+                letter-spacing:2.1px;
+                line-height: 14px;
+                margin: auto 35px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    li.selected div span {
+        color: variables.$color-dark;
+    }
+
+    .production {
+        background-image: url('../../../assets/icons/nodes/production-light.svg');
+    }
+    .production.selected {
+        background-image: url('../../../assets/icons/nodes/production.svg');
+    }
+    .processing {
+        background-image: url('../../../assets/icons/nodes/processing-light.svg');
+    }
+    .processing.selected {
+        background-image: url('../../../assets/icons/nodes/processing.svg');
+    }
+    .transportation {
+        background-image: url('../../../assets/icons/nodes/transport-light.svg');
+        background-size: 22px 14px;
+    }
+    .transportation.selected {
+        background-image: url('../../../assets/icons/nodes/transport.svg');
+        background-size: 22px 14px;
+    }
+    .market, .markets {
+        background-image: url('../../../assets/icons/nodes/markets-light.svg');
+    }
+    .market.selected, .markets.selected {
+        background-image: url('../../../assets/icons/nodes/markets.svg');
+    }
+    .consumers {
+        background-image: url('../../../assets/icons/nodes/consumers-light.svg');
+    }
+    .consumers.selected {
+        background-image: url('../../../assets/icons/nodes/consumers.svg');
+    }
+}
+
+h1 {
+    font-family: Montserrat;
+    font-size: 70px;
+    font-weight: 100;
+    color: variables.$color-dark;
+    margin-bottom: 26px;
+}
+
+::ng-deep h2 {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+}
+
+::ng-deep p {
+    font-size: 21px;
+    letter-spacing: 1.05px;
+    color: variables.$color-dark;
+}
+
+::ng-deep .compact {
+    display: table;
+
+    true-sub-themes {
+        display: table-row-group;
+    }
+
+    div {
+        display: table-row;
+    }
+    h2 {
+        min-width: 135px;
+        display: table-cell;
+        padding: 0 10px 0 0;
+    }
+    p {
+        display: table-cell;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        margin: 0;
+    }
+    margin-bottom: 15px;
+}
+
+.split {
+    div {
+        width: 611px;
+    }
+
+    .left {
+        float:left;
+    }
+
+    .right {
+        float:left;
+        clear:right;
+        margin-left: 63px;
+    }
+
+    p {
+        margin-bottom: 40px;
+    }
+}

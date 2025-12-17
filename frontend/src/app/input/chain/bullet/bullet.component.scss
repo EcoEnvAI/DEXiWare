@@ -1,0 +1,16 @@
+@use "../../../../styles/variables";
+
+.clickable {
+    circle {
+        cursor:pointer;
+    }
+}
+
+.bullet-tooltip {
+    position:absolute;
+    z-index: 100;
+    border: 1px solid variables.$color-dark;
+    background: #fff;
+    font-family: Montserrat;
+    padding: 2px;
+}

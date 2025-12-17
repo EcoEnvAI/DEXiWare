@@ -1,0 +1,38 @@
+{
+    "assessment_name": "Test assessment ",
+    "assessment_answers": [
+        {
+            "value": 3,
+            "indicator_path": [
+                "ENVIRONMENTAL PILLAR",
+                "Production",
+                "Abiotic",
+                "Atmosphere emissions"
+            ],
+            "value_description": "low",
+            "indicator_name": "GHG Balance"
+        },
+        {
+            "value": 3,
+            "indicator_path": [
+                "ENVIRONMENTAL PILLAR",
+                "Production",
+                "Abiotic",
+                "Atmosphere emissions"
+            ],
+            "value_description": "low",
+            "indicator_name": "Emission of Air Pollutants"
+        },
+        {
+            "value": 1,
+            "indicator_path": [
+                "ENVIRONMENTAL PILLAR",
+                "Production",
+                "Abiotic",
+                "Emission of Water Pollutants"
+            ],
+            "value_description": "high",
+            "indicator_name": "P balance"
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+@use "../../../styles/variables";
+@use "../../analysis/topdown/variation/changes";
+
+:host {
+    display: flex;
+
+    ul {
+        list-style-type: none;
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        color: variables.$color-dark;
+    }
+    .left {
+        height: 420px;
+        overflow: hidden;
+
+        true-venn-diagram {
+            margin: 0;
+            padding: 0;
+            display: block;
+            transform: scale3d(0.8, 0.8, 1);
+        }
+    }
+
+    .mid {
+        text-align: center;
+        padding: 0 60px 0 0;
+        margin-left: -20px;
+        h2 {
+            font-family: Montserrat;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 86px;
+            color: variables.$color-dark;
+            letter-spacing: 0px;
+        }
+        ul {
+            width: 420px;
+            padding: 0 0 0 30px;
+            li {
+                height: 60px;
+                background-position: 0 8px;
+                background-repeat: no-repeat;
+                padding: 0 0 0 32px;
+            }
+
+            .economic {
+                background-image: url(../../../assets/icons/pillars/economic.svg);
+            }
+
+            .environmental {
+                background-image: url(../../../assets/icons/pillars/environmental.svg);
+            }
+
+            .social {
+                background-image: url(../../../assets/icons/pillars/social.svg);
+            }
+        }
+    }
+
+    .right {
+        width: 386px;
+        padding-top: 20px;
+
+        .header {
+            margin-bottom: 40px;
+            
+            .small {
+                float: left;
+                width: 35px;
+                height: 35px;
+                margin-top: 20px;
+                
+                true-venn-diagram {
+                    margin: 0;
+                    padding: 0;
+                    display: block;
+                    transform: scale3d(0.07, 0.07, 1);
+                    transform-origin: top left;
+                }
+            }
+            h2 {
+                float:left;
+                font-family: Montserrat;
+                font-size: 29px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 35px;
+                color: variables.$color-medium;
+                letter-spacing: 2.9px;
+                text-transform: uppercase;
+                max-width: 320px;
+            }
+
+            &:after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .direction-indicator {
+                width: 30px;
+                height: 26px;
+                display: inline-block;
+                margin-top: 24px;
+            }
+
+            .dn {
+                background: url(../../../assets/icons/dnTriangleLight.svg);
+            }
+
+            .up {
+                background: url(../../../assets/icons/upTriangleLight.svg);
+            }
+        }       
+    }
+
+    .remove {
+        width: 21px;
+        height: 21px;
+        background-image: url(../../../assets/icons/delete.svg);
+        background-size: 21px 21px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin: 45px 0 0 -30px;
+    }
+
+    true-breadcrumbs {
+        width: 406px;
+    }
+}

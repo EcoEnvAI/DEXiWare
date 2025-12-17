@@ -1,0 +1,47 @@
+<div class="contents" [ngClass]="{loading: isLoading}" *ngIf="!paged">
+    <ul class="menu">
+        <li (click)="bottomUp()" class="bottomup" [ngClass]="{'active':tab=='bottomUp'}">Bottom-up Scenarios</li>
+        <li (click)="topDown()" class="topdown" [ngClass]="{'active':tab=='topDown'}">Top-down Scenarios</li>
+    </ul>
+    <ul class="export">
+        <li><span class="exportLink" *ngIf="tab=='bottomUp'">Export</span></li>
+        <li><span class="exportLink" *ngIf="tab=='topDown'">Export</span></li>
+    </ul>
+
+    <div *ngIf="tab=='bottomUp'">
+        <ul>
+            <li *ngFor="let scenario of bottomUpScenarios; index as idx">
+                <true-bottomup-scenario [scenario]="scenario" [assessmentName]="assessmentName" [idx]="idx+1" (removeClick)="remove(scenario)"></true-bottomup-scenario>
+            </li>
+        </ul>
+    </div>
+
+    <div *ngIf="tab=='topDown'">
+        <ul>
+            <li *ngFor="let scenario of topDownScenarios; index as idx">
+                <true-topdown-scenario [scenario]="scenario" [assessmentName]="assessmentName" [idx]="idx+1" (removeClick)="remove(scenario)"></true-topdown-scenario>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="contents paged" [ngClass]="{loading: isLoading}" *ngIf="paged">
+    <div class="page" *ngFor="let page of bottomUpPages">
+        <h2>{{date}}</h2>
+        <true-breadcrumbs [subset]="config.subset" [includeModels]="true" [assessmentName]="assessmentName"></true-breadcrumbs>
+        <ul>
+            <li *ngFor="let scenario of page.scenarios; index as idx">
+                <true-bottomup-scenario [scenario]="scenario" [idx]="idx+1" (removeClick)="remove(scenario)"></true-bottomup-scenario>
+            </li>
+        </ul>
+    </div>
+    <div class="page" *ngFor="let page of topDownPages">
+        <h2>{{date}}</h2>
+        <true-breadcrumbs [subset]="config.subset" [includeModels]="true" [assessmentName]="assessmentName"></true-breadcrumbs>
+        <ul>
+            <li *ngFor="let scenario of page.scenarios; index as idx">
+                <true-topdown-scenario [scenario]="scenario" [idx]="idx+1" (removeClick)="remove(scenario)"></true-topdown-scenario>
+            </li>
+        </ul>
+    </div>
+</div>

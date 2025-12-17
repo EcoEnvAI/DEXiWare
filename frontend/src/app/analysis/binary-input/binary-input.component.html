@@ -1,0 +1,4 @@
+<ul>
+    <li id="down" [ngClass]="{'selected': value===-1, 'clickable': canDegrade}" (click)="degrade()"></li>
+    <li id="up" [ngClass]="{'selected': value===1, 'clickable': canImprove}" (click)="improve()"></li>
+</ul>

@@ -1,0 +1,66 @@
+{
+    "operation": "generation",
+    "model": "AgriFoodChainIntegrated",
+    "model_path": "models/AgriFoodChainIntegrated.dxi",
+    "goal": "AgriFoodChain",
+    "generator": {
+        "direction": "improve",
+        "max_levels": 2,
+        "max_steps": 1,
+        "unidirectional": true,
+        "constant_attributes": ["Production_EnvironmentalPillar", "/Production/Production_SocialPolicyPillar"],
+        "max_time": 5000,
+        "max_solutions": 500,
+        "report_solutions": 10
+    },
+    "alternative": {
+        "alternative": "ChainMedium",
+        "inputs": [{
+                "values": ["Medium"],
+                "attribute": "Production_EnvironmentalPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Processing_EnvironmentalPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Tranportation_EnvironmentalPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Market_EnvironmentalPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Consumers_EnvironmentalPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Production_EconomicPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Processing_EconomicPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Tranportation_EconomicPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Market_EconomicPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Consumers_EconomicPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Production_SocialPolicyPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Processing_SocialPolicyPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Tranportation_SocialPolicyPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Market_SocialPolicyPillar"
+            }, {
+                "values": ["Medium"],
+                "attribute": "Consumers_SocialPolicyPillar"
+            }
+        ]
+    }
+}

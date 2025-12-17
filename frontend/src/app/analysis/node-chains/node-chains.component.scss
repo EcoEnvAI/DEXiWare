@@ -1,0 +1,47 @@
+@use "../../../styles/variables";
+
+div {
+    overflow: hidden;
+    
+    h2 {
+        width: 1280px;
+        height: 88px;
+        border-radius: 14px;
+        background: variables.$color-very-light;
+        text-align: center;
+
+        div {
+            overflow: hidden;
+            display: inline-block;
+
+            true-pillar-icon {
+                float: left;
+                margin-top: 10px;
+            }
+
+            span {
+                float: left;
+                color: variables.$color-dark;
+                font-family: Montserrat;
+                font-size: 29px;
+                line-height: 35px;
+                letter-spacing: 2.9px;
+                text-transform: uppercase;
+                margin-top: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        div:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+
+    true-node-chain {
+        margin: 0 auto;
+        display: inline-block;
+
+    }
+}

@@ -1,0 +1,150 @@
+@use "../../../styles/variables";
+
+:host {
+    height:24px;
+    overflow:hidden;
+    display:block;
+}
+
+span {
+    display:inline-block;
+    margin-left:15px;
+    width:290px;
+    overflow:hidden;
+    font-family: Montserrat;
+    font-size:14px;
+    font-weight:600;
+    color: variables.$color-dark;
+    height:14px;
+    line-height:14px;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+}
+
+.indicator-tooltip {
+    display: block;
+    position:absolute;
+    z-index: 100;
+    border: 1px solid variables.$color-dark;
+    background: #fff;
+    p {
+        font-family: Montserrat;
+        font-size: 14px;
+        color: variables.$color-dark;
+        width: 600px;
+    }
+    padding: 6px;
+
+    ul {
+        list-style-type: none;
+        margin:0;
+
+        li {
+            em {
+                font-family: Montserrat;
+                font-size: 14px;
+                font-style: normal;
+            }
+            font-family: Montserrat;
+            font-size: 14px;
+            color: variables.$color-dark;
+        }
+    }
+}
+
+div {
+    display:inline-block;
+}
+
+.selected {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.low {
+    color: variables.$color-ind-low;
+}
+
+.medium {
+    color: variables.$color-ind-medium;
+}
+
+.medium-low {
+    color: variables.$color-ind-medium;   
+}
+
+.medium-high {
+    color: variables.$color-ind-medium;
+}
+
+.high {
+    color: variables.$color-ind-high;
+}
+
+.weak {
+    color: variables.$color-ind-low;
+}
+.strong {
+    color: variables.$color-ind-high;
+}
+
+.yes {
+    color: variables.$color-ind-high;
+}
+.no {
+    color: variables.$color-ind-low;
+}
+
+.presence {
+    color: variables.$color-ind-high;
+}
+.absence {
+    color: variables.$color-ind-low;
+}
+
+.present {
+    color: variables.$color-ind-high;
+}
+.absent {
+    color: variables.$color-ind-low;
+}
+
+.managed {
+    color: variables.$color-ind-high;
+}
+.not-managed {
+    color: variables.$color-ind-low;
+}
+
+.achieved {
+    color: variables.$color-ind-high;
+}
+.not-achieved {
+    color: variables.$color-ind-low;
+}
+
+.included {
+    color: variables.$color-ind-high;
+}
+.excluded {
+    color: variables.$color-ind-low;
+}
+
+.acceptable {
+    color: variables.$color-ind-high;
+}
+.unacceptable {
+    color: variables.$color-ind-low;
+}
+
+.red {
+    color: variables.$color-ind-low;
+}
+
+.orange {
+    color: variables.$color-ind-medium;
+}
+
+.green {
+    color: variables.$color-ind-high;
+}

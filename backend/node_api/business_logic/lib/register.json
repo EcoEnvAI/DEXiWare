@@ -1,0 +1,18 @@
+{
+  "default": {
+    "evaluate": { "library": "true-evaluator", "operation": "evaluation" },
+    "evaluate_transitional": { "library": "true-evaluator", "operation": "partial_evaluation" },
+    "generate": { "library": "true-evaluator", "operation": "generation" },
+    "get_inputs": { "library": "true-evaluator", "operation": "list_inputs" },
+    "get_attributes": { "library": "true-evaluator", "operation": "list_model" }
+  },
+  "pool": [
+    {
+      "name": "true-evaluator",
+      "grammar": "java",
+      "path": "true_evaluator/",
+      "settings": "_settings.json",
+      "executor": "_executor.js"
+    }
+  ]
+}

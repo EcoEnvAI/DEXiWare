@@ -1,0 +1,19 @@
+<ul>
+    <li>
+        <h2>USERS</h2>
+        <ul class="tabs"><li [ngClass]="{'active': tab=='existing'}" (click)="openTab('existing')">EXISTING</li><li [ngClass]="{'active': tab=='new'}" (click)="openTab('new')">NEW</ul>
+        <form>
+            <div class="left" *ngIf="tab=='new'">
+                <input type="text" placeholder="Name" name="name" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" />
+                <input type="text" placeholder="Email" name="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" />
+            </div>
+            <div class="left" *ngIf="tab=='existing'">
+                <select [(ngModel)]="userId" [ngModelOptions]="{standalone: true}">
+                    <option value=""></option>
+                    <option *ngFor="let user of users" [value]="user.id">{{user.firstname}} {{user.lastname}} ({{user.email}})</option>
+                </select>
+            </div>
+            <div class="button" (click)="addUser()">ADD</div> <span class="error" *ngIf="error">{{error}}</span>
+        </form>
+    </li>
+</ul>

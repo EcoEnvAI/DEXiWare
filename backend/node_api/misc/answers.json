@@ -1,0 +1,257 @@
+{
+    "pillars": {
+        "ENVIRONMENTAL": {
+            "nodes": {
+                "Production": {
+                    "indicators": {
+                        "GHG Balance": "low",
+                        "Emission of Air Pollutants": "low",
+                        "P balance": "medium",
+                        "N balance": "low",
+                        "SynN fertilisers": "low",
+                        "SynP fertilisers": "medium",
+                        "Ground and Surface Water Withdrawals": "medium",
+                        "Diesel consumption": "medium",
+                        "Land use": "high",
+                        "Land sharing/habitat provision": "medium",
+                        "Soil Organic Matter": "high"
+                    }
+                },
+                "Processing": {
+                    "indicators": {
+                        "Electricity": "low",
+                        "Other fuels": "",
+                        "Renewable electricity": "high",
+                        "Renewable other sources": "low",
+                        "GHG Balance": "",
+                        "Emission of Air Pollutants": "high",
+                        "Food Loss and Waste Reduction": "high",
+                        "Waste Disposal": "high",
+                        "Renewable and Recycled packaging": "low",
+                        "Ground and Surface Water Withdrawals": ""
+                    }
+                },
+                "Transport and Distribution": {
+                    "indicators": {
+                        "Transport intensity":"medium-high",
+                        "Atmosphere emissions": "",
+                        "Loss of products": "high"
+                    }
+                },
+                "Markets and Retailers": {
+                    "indicators": {
+                        "Food Loss and Waste Reduction": "high",
+                        "Waste Disposal": "high",
+                        "Energy Efficiency": "high",
+                        "Renewable Energy %": "medium",
+                        "Emission of Air Pollutants": "low",
+                        "Renewable and Recycled Materials": "medium",
+                        "Packaging specification": "medium"
+                    }
+                },
+                "Consumers": {
+                    "indicators": {
+                        "Food Loss and Waste Reduction": "high",
+                        "Waste Disposal": "high",
+                        "Cooking intensity":"high",
+                        "Renewable Energy %":"low",
+                        "Water use": "low"
+                    }
+                }
+            }
+        },
+        "ECONOMIC": {
+            "nodes": {
+                "Production": {
+                    "indicators": {
+                        "Net Income": "medium",
+                        "Safety Nets": "yes",
+                        "Full Cost Accounting": "yes",
+                        "Internal Investment": "medium",
+                        "Long Term Profitability": "medium",
+                        "Sustainability Management Plan": "yes",
+                        "Stability of Supplier Relationships": "high",
+                        "Dependence on the Leading Supplier": "medium",
+                        "Stability of Market": "high",
+                        "Price Determination": "yes",
+                        "Product Diversification": "high",
+                        "Control Measures": "presence",
+                        "Food Quality": "high",
+                        "Certified Production": "yes",
+                        "Regional Workforce": "high", 	
+                        "Local Procurement": "high",
+                        "Food Loss and Waste Reduction": "managed",
+                        "GHG Reduction Target": "",    
+                        "Land Use and Land Cover Change": "managed"
+                    }
+                },
+                "Processing": {
+                    "indicators": {
+                        "Net Income": "high",
+                        "Cost of Production": "high",
+                        "Safety Nets": "yes",
+                        "Internal Investment": "high",
+                        "Long Term Profitability": "high",
+                        "Sustainability Management Plan": "yes",
+                        "Net Trade": "low",
+                        "Stability of Market": "medium",
+                        "Guarantee of Product level": "high",
+                        "Product Diversification": "high",
+                        "Stability of Supplier Relationships": "medium",
+                        "Dependence on the Leading Supplier": "medium",
+                        "Guarantee of Supply Level": "medium",
+                        "Control Measures": "presence",
+                        "Food Quality": "high",
+                        "Certified Production": "yes",
+                        "Product Labelling": "presence",
+                        "Traceability System": "presence",
+                        "Regional Workforce": "high",
+                        "Local Procurement": "high"
+                    }
+                },
+                "Transport and Distribution": {
+                    "indicators": {
+                        "Net Income": "high",
+                        "Safety Nets": "yes",		
+                        "Internal Investment": "high",
+                        "Control Measures": "presence",
+                        "GHG Reduction Target": "not achieved",
+                        "Food Loss": "managed"
+                    }
+                },
+                "Markets and Retailers": {
+                    "indicators": {
+                        "Net Income": "high",
+                        "Safety Nets": "yes",
+                        "Cost of Marketing and Storage": "high",
+                        "Internal Investment": "high",
+                        "Long Term Profitability": "high",
+                        "Sustainability Management Plan": "yes",
+                        "Net Trade": "low",
+                        "Stability of Consumer Demand": "medium",
+                        "Product Diversification": "high",
+                        "Guarantee of Product level": "high",
+                        "Stability of Supplier Relationships": "high",
+                        "Dependence on the Leading Supplier": "medium",
+                        "Guarantee of Supply Level": "medium",
+                        "Control Measures": "presence",
+                        "Food Quality": "high",
+                        "Certified Production": "yes",
+                        "Product Labelling": "presence",
+                        "Traceability System": "presence",
+                        "Regional Workforce": "high",
+                        "Local Procurement": "high",
+                        "Food Redistribution Scheme (Including waste management)": "no"
+                    }
+                },
+                "Consumers": {
+                    "indicators": {
+                        "Price of Food": "medium",
+                        "Price Promotion": "",
+                        "Food Expenditure": "low",
+                        "Availability of Products": "high",
+                        "Willingness to Pay for Healthy Products": "",
+                        "Willingness to Pay For Convenience": "medium",
+                        "Willingness to Pay For Environmental Friendly Products": "high",
+                        "Food Scarcity*(quality and quantity)": "low",
+                        "Financial Vulnerability": "",
+                        "Product Information *(Labelling and other Information)": "presence",
+                        "Education and Information": "high",
+                        "Culture": "high",
+                        "Taxes and Bans": "",
+                        "Educational Campaigns": "strong",
+                        "Income support Policies": ""
+                    }
+                }
+            }
+        },
+        "SOCIAL": {
+            "nodes": {
+                "Production": {
+                    "indicators": {
+                        "CAP": "yes",
+                        "Food Sovereignty": "yes", 
+                        "Agro-ecology": "",
+                        "Safety and Health Trainings": "high",
+                        "Safety of Workplace, Operations and Facilities": "high",
+                        "Health Coverage and Access to Medical care": "",
+                        "Employment Relations": "yes",
+                        "Wage Level": "acceptable",
+                        "Capacity Development": "high",
+                        "Non Discrimination": "yes",
+                        "Gender Equality": "acceptable",
+                        "Support to Vulnerable People": "",	
+                        "Fair Access to Means of Production": "high",
+                        "Freedom of Association and Right to Bargaining": "yes"
+                    }
+                },
+                "Processing": {
+                    "indicators": {
+                        "Safety and Health Trainings": "present",
+                        "Public Health": "present",
+                        "Innovation and Licencing": "present",
+                        "Employment Relations": "yes",
+                        "Wage Level": "acceptable",
+                        "Capacity Development": "high",
+                        "Rights of Suppliers": "yes",
+                        "Freedom of Association and Right to Bargaining": "yes",
+                        "Rights of Retailers": "yes",
+                        "Health Coverage and Access to Medical care": "high",
+                        "Safety of Workplace, Operations and Facilities": "high",
+                        "Non Discrimination": "yes",
+                        "Gender Equality": "acceptable",
+                        "Support to Vulnerable People": "high"
+                    }
+                },
+                "Transport and Distribution": {
+                    "indicators": {
+                        "Safety and Health Trainings": "present",
+                        "Public Health": "present",
+                        "Employment Relations": "yes",
+                        "Wage Level": "acceptable",
+                        "Capacity Development": "high",
+                        "Rights of Suppliers": "yes",
+                        "Freedom of Association and Right to Bargaining": "yes",
+                        "Rights of Retailers": "yes",
+                        "Health Coverage and Access to Medical care": "high",
+                        "Safety of Workplace, Operations and Facilities": "high"
+                    }
+                },
+                "Markets and Retailers": {
+                    "indicators": {
+                        "Connect Farmers to markets": "",
+                        "Rights of Consumers": "acceptable",
+                        "Community Supported Agriculture": "absent",
+                        "Employment Relations": "yes",
+                        "Wage Level": "acceptable",
+                        "Capacity Development": "high",
+                        "Rights of Suppliers": "yes",
+                        "Health Coverage and Access to Medical care": "high",
+                        "Safety of Workplace, Operations and Facilities": "high",
+                        "Safety and Health Trainings": "high",
+                        "Non Discrimination": "yes",
+                        "Gender Equality": "acceptable",
+                        "Fair Pricing and Transparent Contracts": "yes"
+                    }
+                },
+                "Consumers": {
+                    "indicators": {
+                        "Income": "medium",
+                        "Indigenous Knowledge": "",
+                        "Food Sovereignty": "medium",
+                        "Traditional recipes": "included",
+                        "Consumers' Education": "medium",
+                        "Preference for processed Food": "low",
+                        "Advertising of Healthy Food": "",
+                        "School meals": "",
+                        "Taxation of Unhealthy Food": "present",		
+                        "Income Support Policies": "present",
+                        "Health Coverage and Access to Medical care": "high",
+                        "Public procurement": "medium",
+                        "Dietary guidelines": ""
+                    }
+                }
+            }
+        }
+    }
+}

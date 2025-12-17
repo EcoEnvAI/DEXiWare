@@ -1,0 +1,49 @@
+@use "../../../styles/variables";
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    color: variables.$color-dark;
+    display: block;
+    line-height: 48px;  
+    width: 550px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.btn {
+    width: 350px;
+    height: 20px;
+    color: variables.$color-dark;
+    background-color: variables.$color-white;
+    background-position: 34px 0;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    padding: 1px 0 0 74px;
+    user-select: none;
+    margin: 23px auto 13px auto;
+    border-radius: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    display: block;
+    cursor: pointer;
+    text-align: left;
+
+    &.up {
+        background-image: url('../../../assets/icons/uparrow.svg');
+    }
+
+    &.right {
+        background-image: url('../../../assets/icons/rarrow.svg');
+    }
+
+    &.left {
+        background-image: url('../../../assets/icons/larrow.svg');
+    }
+}

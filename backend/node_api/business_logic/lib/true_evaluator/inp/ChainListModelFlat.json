@@ -1,0 +1,6 @@
+{
+    "operation": "list_model",
+    "model": "AgriFoodChainIntegrated",
+    "model_path": "models/AgriFoodChainIntegrated.dxi"
+    "output": "flat"
+}

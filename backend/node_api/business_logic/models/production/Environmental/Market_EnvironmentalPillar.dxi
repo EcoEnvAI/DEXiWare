@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEXi>
+  <VERSION>5.04</VERSION>
+  <CREATED>2020-05-11T18:14:14</CREATED>
+  <NAME>Market_EnvironmentalPillar</NAME>
+  <DESCRIPTION>2020_04_09_EnvirPill_4_market - Verified</DESCRIPTION>
+  <OPTION>New</OPTION>
+  <SETTINGS>
+    <REPORTS>6</REPORTS>
+  </SETTINGS>
+  <ATTRIBUTE>
+    <NAME>Market_EnvironmentalPillar</NAME>
+    <DESCRIPTION>Market_EnvironmentalPillar</DESCRIPTION>
+    <SCALE>
+      <SCALEVALUE>
+        <NAME>Low</NAME>
+        <GROUP>BAD</GROUP>
+      </SCALEVALUE>
+      <SCALEVALUE>
+        <NAME>Medium</NAME>
+      </SCALEVALUE>
+      <SCALEVALUE>
+        <NAME>High</NAME>
+        <GROUP>GOOD</GROUP>
+      </SCALEVALUE>
+    </SCALE>
+    <FUNCTION>
+      <LOW>000000011011112112111112122</LOW>
+    </FUNCTION>
+    <OPTION>0</OPTION>
+    <ATTRIBUTE>
+      <NAME>Waste</NAME>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+      <FUNCTION>
+        <LOW>001111122</LOW>
+      </FUNCTION>
+      <OPTION>1</OPTION>
+      <ATTRIBUTE>
+        <NAME>Food Loss and Waste Reduction</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&gt;5% Food disposed of as waste</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>2-5% Food disposed of as waste</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&lt;2% Food disposed of as waste</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>1</OPTION>
+      </ATTRIBUTE>
+      <ATTRIBUTE>
+        <NAME>Waste Disposal</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&lt;50% recycled</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>50-80% recycled</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&gt;80% recycled</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>0</OPTION>
+      </ATTRIBUTE>
+    </ATTRIBUTE>
+    <ATTRIBUTE>
+      <NAME>Energy</NAME>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+      <FUNCTION>
+        <LOW>000000011001111122122222222</LOW>
+        <CONSIST>False</CONSIST>
+      </FUNCTION>
+      <OPTION>0</OPTION>
+      <ATTRIBUTE>
+        <NAME>Energy Efficiency</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>Frozen</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>Refrigeration</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>Ambient</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>1</OPTION>
+      </ATTRIBUTE>
+      <ATTRIBUTE>
+        <NAME>Renewable Energy %</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&lt;20%</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>20-50%</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&gt;50%</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>0</OPTION>
+      </ATTRIBUTE>
+      <ATTRIBUTE>
+        <NAME>Emission of Air Pollutants</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>Oil, solid fuel combustion</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>Gas combustion</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>No on site combustion</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>0</OPTION>
+      </ATTRIBUTE>
+    </ATTRIBUTE>
+    <ATTRIBUTE>
+      <NAME>Resource use</NAME>
+      <SCALE>
+        <SCALEVALUE>
+          <NAME>High</NAME>
+          <GROUP>BAD</GROUP>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Medium</NAME>
+        </SCALEVALUE>
+        <SCALEVALUE>
+          <NAME>Low</NAME>
+          <GROUP>GOOD</GROUP>
+        </SCALEVALUE>
+      </SCALE>
+      <FUNCTION>
+        <LOW>001012022</LOW>
+        <CONSIST>False</CONSIST>
+      </FUNCTION>
+      <OPTION>0</OPTION>
+      <ATTRIBUTE>
+        <NAME>Renewable and Recycled Materials</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>&lt;50% renewable recycled</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>50-80% renewable recycled</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>&gt;80% renewable recycled</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>2</OPTION>
+      </ATTRIBUTE>
+      <ATTRIBUTE>
+        <NAME>Packaging specification</NAME>
+        <SCALE>
+          <SCALEVALUE>
+            <NAME>More than one layer</NAME>
+            <GROUP>BAD</GROUP>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>One layer</NAME>
+          </SCALEVALUE>
+          <SCALEVALUE>
+            <NAME>No packaging</NAME>
+            <GROUP>GOOD</GROUP>
+          </SCALEVALUE>
+        </SCALE>
+        <OPTION>0</OPTION>
+      </ATTRIBUTE>
+    </ATTRIBUTE>
+  </ATTRIBUTE>
+</DEXi>

@@ -1,0 +1,62 @@
+{
+  "java": {
+    "name": "true-evaluator",
+    "grammar": "java",
+    "executable": "TrueEvaluator.jar",
+    "allowed_operations": {
+      "evaluation": {
+        "validation": {
+          "schema": "evaluation.json",
+          "type" : "json"
+        }
+      },
+      "partial_evaluation": {
+        "validation": {
+          "schema": "evaluation.json",
+          "type" : "json"
+        }
+      },
+      "generation" : {
+        "validation": {
+          "schema": "generation.json",
+          "type" : "json"
+        },
+        "default_params": {
+          "generator": {
+            "direction": "improve",
+            "max_levels": 2,
+            "max_steps": 1,
+            "unidirectional": true,
+            "max_time": 5000,
+            "max_solutions": 500,
+            "report_solutions": 10
+          }
+        },
+        "parameter_map":
+        [
+          {
+            "param": "generator.max_levels",
+            "condition": "goal",
+            "values": {
+              "AgriFoodChain" : 2,
+              "_" : 1
+            }
+          }
+        ]
+      },
+      "list_inputs": {
+        "validation": {
+          "schema": "basic_structure.json",
+          "type" : "json"
+        }
+      },
+      "list_model": {
+        "validation": {
+          "schema": "basic_structure.json",
+          "type" : "json"
+        }
+      }
+    },
+    "validation_schemas_path": "_validation/"
+  }
+}

@@ -1,0 +1,1473 @@
+{
+  "goal": "AgriFoodChain",
+  "generated": {
+    "emitted": 9700,
+    "distance": 4,
+    "solutions": 300,
+    "alternatives": [
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ],
+      [
+        {
+          "path": "/AgriFoodChain",
+          "values": [
+            "High"
+          ],
+          "attribute": "AgriFoodChain"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Social-PolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Production_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Processing_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Tranportation_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Market_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EnvironmentalPillar/Consumers_EnvironmentalPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_EnvironmentalPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Production_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Production_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Processing_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Processing_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Tranportation_EconomicPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Market_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Market_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/EconomicPillar/Consumers_EconomicPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Consumers_EconomicPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Production_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Production_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Processing_SocialPolicyPillar",
+          "values": [
+            "High"
+          ],
+          "attribute": "Processing_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Tranportation_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Tranportation_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Market_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Market_SocialPolicyPillar"
+        },
+        {
+          "path": "/AgriFoodChain/Social-PolicyPillar/Consumers_SocialPolicyPillar",
+          "values": [
+            "Medium"
+          ],
+          "attribute": "Consumers_SocialPolicyPillar"
+        }
+      ]
+    ],
+    "time": 101.0,
+    "outcome": "completed"
+  },
+  "alternative": {
+    "inputs": [
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Production_EnvironmentalPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Processing_EnvironmentalPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Tranportation_EnvironmentalPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Market_EnvironmentalPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Consumers_EnvironmentalPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Production_EconomicPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Processing_EconomicPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Tranportation_EconomicPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Market_EconomicPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Consumers_EconomicPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Production_SocialPolicyPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Processing_SocialPolicyPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Tranportation_SocialPolicyPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Market_SocialPolicyPillar"
+      },
+      {
+        "values": [
+          "Medium"
+        ],
+        "attribute": "Consumers_SocialPolicyPillar"
+      }
+    ],
+    "alternative": "ChainMedium"
+  },
+  "generator": {
+    "max_steps": 1,
+    "constant_attributes": [
+      "Production_EnvironmentalPillar",
+      "/Production/Production_SocialPolicyPillar"
+    ],
+    "max_solutions": 500,
+    "max_levels": 2,
+    "unidirectional": true,
+    "report_solutions": 10,
+    "max_time": 5000,
+    "direction": "improve"
+  },
+  "model": "AgriFoodChainIntegrated",
+  "operation": "generation",
+  "model_path": "models/AgriFoodChainIntegrated.dxi"
+}

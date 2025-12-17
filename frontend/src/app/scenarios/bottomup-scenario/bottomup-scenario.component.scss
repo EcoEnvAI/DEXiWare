@@ -1,0 +1,108 @@
+@use "../../../styles/variables";
+@use "../../analysis/topdown/variation/changes";
+
+div {
+    float: left;
+}
+
+.vennState {
+    width: 402px;
+    h3 {
+        font-family: Montserrat;
+        color: variables.$color-dark;
+        font-weight: 600;
+        letter-spacing: 2.1px;
+        font-size: 14px;
+    }
+
+    true-venn-diagram, true-evaluation-diagram {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    &.left {
+        h3 {
+            margin-left: 80px;
+        }
+
+        true-venn-diagram {
+            transform: translate(0px, -20px) scale3d(0.85, 0.85, 1);
+        }
+
+        true-evaluation-diagram {
+            transform: translate(-90px, -20px) scale3d(0.50, 0.50, 1);
+        }
+    }
+
+    &.right {
+        h3 {
+            margin-left: 50px;
+        }
+
+        true-venn-diagram {
+            transform: translate(-4px, -20px) scale3d(0.85, 0.85, 1);
+        }
+
+        true-evaluation-diagram {
+            transform: translate(-110px, -20px) scale3d(0.50, 0.50, 1);
+        }
+    }
+}
+
+.middle {
+    width: 406px;
+    margin: 20px;
+    text-align: center;
+
+    h2 {
+        font-family: Montserrat;
+        font-size: 70px;
+        font-weight: 300;
+        font-style: normal;
+        line-height: 86px;
+        letter-spacing: 0px;
+        color: variables.$color-dark;
+    }
+
+    h3 {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        color: variables.$color-dark;
+    }
+
+    h4 {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 600;
+        font-style: normal;
+        line-height: 20px;
+        letter-spacing: 2.1px;
+        text-transform: uppercase;
+        color: variables.$color-medium;
+        position: relative;
+        top: -30px;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.remove {
+    width: 21px;
+    height: 21px;
+    background-image: url(../../../assets/icons/delete.svg);
+    background-size: 21px 21px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 10px 0 0 -130px;
+}

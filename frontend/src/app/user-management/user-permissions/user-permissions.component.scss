@@ -1,0 +1,50 @@
+@use "../../../styles/variables";
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+        float: left;
+        border-bottom: 2px solid variables.$color-light;
+        user-select: none;
+        flex: 0 0 400px;
+        align-items: stretch;
+    }
+
+    li+li {
+        flex: 0 0 200px;
+    }
+
+    .name {
+        flex: 0 0 400px;
+        line-height: 28px;
+        height: 100%;
+
+        div {
+            display: inline-block;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2.1px;
+            line-height: 28px;
+            color: variables.$color-dark;
+            padding-left: 53px;
+            padding-top: 0;
+            margin-top: 0;
+            background-image: url('/../../../assets/icons/node.svg');
+            background-position: 18px center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}

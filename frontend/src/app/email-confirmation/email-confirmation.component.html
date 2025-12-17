@@ -1,0 +1,21 @@
+<div class="center">
+    <h1 *ngIf="!config.pillar_models">Pathfinder</h1>
+    <h2 *ngIf="!config.pillar_models">for agri-food chains</h2>
+
+    <form name="form" *ngIf="state=='invalid'" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="help-block">The email confirmation link has expired.</div>
+        <div class="submit">
+          <button></button>
+        </div>
+    </form>
+    <form name="form" *ngIf="state=='success'" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+        <div class="help-block">The email was successfully confirmed. Proceed to login.</div>
+        <div class="submit">
+          <button></button>
+        </div>
+    </form>
+
+    <h2 *ngIf="config.pillar_models">Powered by</h2>
+    <h3 *ngIf="config.pillar_models">DEXiWare</h3>
+  </div>
+  

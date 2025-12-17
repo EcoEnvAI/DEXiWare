@@ -1,0 +1,9 @@
+<ul *ngIf="includeModels">
+    <li *ngFor="let segment of segments" [ngClass]="segment.className">{{segment.name}}</li>
+</ul>
+
+<ul *ngIf="!includeModels" class="centered">
+    <li *ngFor="let row of rows">
+        <ul><li class="key">{{row.key}}</li><li class="value">{{row.value}}</li></ul>
+    </li>
+</ul>

@@ -1,0 +1,114 @@
+@use "../../../styles/variables";
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+
+    &.review li {
+        width: 414px;
+        margin-right: 14px;
+    }
+
+    li {
+        float: left;
+        width: 428px;
+        height: 82px;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+
+        true-circular-progress {
+            width: 69px;
+            height: 69px;
+            float: left;
+            margin-left: 12px;
+            margin-top: 7px;
+        }
+
+        span {
+            line-height:65px;
+            margin-left:10px;
+            font-size:29px;
+            font-family: Montserrat;
+            font-weight: 500;
+            letter-spacing: 2.9px;
+            display: block;
+            width: 600px;
+            margin-top: 8px;
+        }
+
+        div {
+            overflow: hidden;
+        }
+
+        em {
+            display: none;
+            position: absolute;
+            font-style: normal;
+            top: 15px;
+            left: -80px;
+            width: 600px;
+            height: 50px;
+            line-height:50px;
+            padding-left:10px;
+            text-align: center;
+            font-size:29px;
+            font-family: Montserrat;
+            font-weight: 500;
+            letter-spacing: 2.9px;
+            background: #fff;
+            border-radius: 10px;
+            border: 2px solid black;
+            z-index: 100;
+        }
+    }
+
+    .selected {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .long:hover {
+        opacity: 1;
+        em {
+            display: block;
+        }
+    }
+
+    .economic, .resource-use-efficiency {
+        color: variables.$color-econ;
+        stroke: variables.$color-econ;
+        fill: variables.$color-econ;
+        opacity: 0.5;
+    }
+    .economic.selected, .resource-use-efficiency.selected {
+        opacity: 1;
+        background-color: variables.$color-econ-light;
+    }
+    .environmental {
+        color: variables.$color-env;
+        stroke: variables.$color-env;
+        fill: variables.$color-env;
+        opacity: 0.4;
+    }
+    .environmental.selected {
+        opacity: 1;
+        background-color: variables.$color-env-light;
+    }
+    .social, .socio-economic {
+        color: variables.$color-soc;
+        stroke: variables.$color-soc;
+        fill: variables.$color-soc;
+        opacity: 0.4;
+    }
+    .social.selected, .socio-economic.selected {
+        opacity: 1;
+        background-color: variables.$color-soc-light;
+    }    
+}
+
+ul:after {
+    content: "";
+    clear: both;
+    display: table;
+}

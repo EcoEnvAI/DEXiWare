@@ -1,0 +1,5 @@
+<svg [attr.width]="width" height="30px" [ngClass]="svgClass">
+    <line [attr.x1]="lineStart" y1="15" [attr.x2]="lineEnd" y2="15" [attr.stroke]="stroke" stroke-width="2" />
+    <circle (mouseenter)="enter()" (mouseleave)="leave()" (click)="handleClick()" [attr.r]="radius" [attr.cx]="centerX" cy="15" [attr.stroke-width]="strokeWidth" [attr.fill]="fill" [attr.stroke]="stroke"></circle>
+</svg>
+<div *ngIf="showTooltip" class="bullet-tooltip">{{text}}</div>

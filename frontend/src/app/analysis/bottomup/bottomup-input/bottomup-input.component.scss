@@ -1,0 +1,188 @@
+@use "../../../../styles/variables";
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    border-radius: 26px 26px 0 0;
+    padding: 13px;
+    height: 110px;
+    overflow: hidden;
+
+    em {
+        font-family: Montserrat;
+        font-size: 29px;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 2.9px;
+    }
+    
+    true-traffic-lights {
+        display: block;
+        transform: scale(2.0);
+        margin-top: 15px;
+    }
+
+}
+
+.pillarModels li {
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+
+    .node {
+        margin-left:0;
+
+        .normal li {
+            border-radius:0;
+            padding:0;
+        }
+
+        em {
+            color: variables.$color-dark;
+            font-family: Montserrat;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-style: normal;
+            letter-spacing: 2.1px;
+            padding: 0 0 0 30px;
+            background: none;
+            background-position: 0 center;
+            background-repeat: no-repeat;
+        }
+        
+        li {
+            margin-left: 10px;
+        }
+    }
+}
+
+.node {
+    margin: 0;
+    padding: 0;
+
+    true-traffic-lights {
+        display: block;
+        transform: scale(1.5);
+        margin: 15px 0 10px 0;
+    }
+
+    true-indicator-row {
+        height: 26px;
+    }
+}
+
+.horizontal li {
+    float:left;
+    width: 412px;
+}
+
+.horizontal li+li {
+    margin-left: 15px;
+}
+
+.horizontal:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.normal li {
+    text-align: left;
+    width: auto;
+    margin-left: 0 !important;
+}
+
+.normal {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0 10px 0;
+
+    em {
+        color: variables.$color-dark;
+        font-family: Montserrat;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 2.1px;
+        padding: 0 0 0 30px;
+        background-position: 0 center;
+        background-repeat: no-repeat;
+
+        &.production {
+            background-image: url('../../../../assets/icons/nodes/production-light.svg')
+        }
+
+        &.processing {
+            background-image: url('../../../../assets/icons/nodes/processing-light.svg')
+        }
+
+        &.transportation {
+            background-image: url('../../../../assets/icons/nodes/transport-light.svg')
+        }
+
+        &.market {
+            background-image: url('../../../../assets/icons/nodes/markets-light.svg')
+        }
+
+        &.consumers {
+            background-image: url('../../../../assets/icons/nodes/consumers-light.svg')
+        }
+    }
+
+    div {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url('../../../../assets/icons/expand.svg');
+        cursor: pointer;
+    }
+}
+
+.expanded h2 div {
+    background-image: url('../../../../assets/icons/collapse.svg') !important;
+}
+
+.economic, .resource-use-efficiency {
+    background: variables.$color-econ-light;
+
+    em {
+        color: variables.$color-econ;
+        background-image: url(../../../../assets/icons/pillars/economic.svg);
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        padding: 0 0 0 30px;
+    }
+}
+
+.environmental {
+    background: variables.$color-env-light;
+
+    em {
+        color: variables.$color-env;
+        background-image: url(../../../../assets/icons/pillars/environmental.svg);
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        padding: 0 0 0 30px;
+    }
+}
+
+.social, .socio-economic {
+    background: variables.$color-soc-light;
+
+    em {
+        color: variables.$color-soc;
+        background-image: url(../../../../assets/icons/pillars/social.svg);
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        padding: 0 0 0 30px;
+    }
+}

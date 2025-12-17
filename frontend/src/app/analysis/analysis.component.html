@@ -1,0 +1,42 @@
+<div [ngClass]="{loading: !evaluationData}">
+    <div class="venn-container">
+        <true-breadcrumbs [subset]="this.config.subset" [assessmentName]="assessmentName"></true-breadcrumbs>
+        
+        <div *ngIf="!config.pillar_models" class="button floated" id="bottomUpButton" (click)="bottomUp()">
+            <em>Try different input</em>
+            <span>(bottom up scenario)</span>
+        </div>
+
+        <div class="venn floated" [ngClass]="{pillarModels: config.pillar_models}">
+            <true-venn-diagram *ngIf="!config.pillar_models && evaluationData" [values]="evaluationData" [options]="{}"></true-venn-diagram>
+            <true-evaluation-diagram *ngIf="config.pillar_models && evaluationData" [values]="evaluationData" [options]="{}"></true-evaluation-diagram>
+        </div>
+
+        <div *ngIf="!config.pillar_models" class="button floated" [ngClass]="{pillarModels: config.pillar_models}" id="topDownButton" (click)="topDown()">
+            <em>Try different goals</em>
+            <span>(top down scenario)</span>
+        </div>
+
+        <div *ngIf="config.pillar_models && evaluationData" class="button pillarModels" id="bottomUpButton" (click)="bottomUp()">
+            <em>Modify production</em>
+            <span>(change input data)</span>
+        </div>
+    </div>
+    <true-node-chains [pillars]="pillars"></true-node-chains>
+</div>
+
+<div id="topDownPicker" *ngIf="topDownModal" (focusout)="closeTopDownModal()">
+    <div #topDownPicker>
+        <ul>
+            <li *ngFor="let tier of topDownData">
+                <ul>
+                    <li *ngFor="let item of tier" [ngClass]="{'highlightSelectedOnly': topDownChanged, 'selected': item.change != 0}">
+                        <div [ngClass]="valueClass(item.value)"></div> <span>{{item.name}}</span> <true-binary-input [(value)]="item.change" (change)="topDownChange(item)" [can-improve]="item.value<2" [can-degrade]="item.value>0" ></true-binary-input>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="modalLink" [ngClass]="{'active': topDownChanged}" (click)="generateTopDown()">generate results</div>
+        <div class="modalLink back" (click)="closeTopDownModal()">return back</div>
+    </div>
+</div>
