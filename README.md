@@ -95,3 +95,11 @@ Important: Use `db` (the Docker service name), not `localhost`.
 When running with Docker Compose, Swagger UI is available at:
 
 - http://localhost:8080/api-docs/
+
+## Database ERD
+
+An entity-relationship diagram (ERD) of the PostgreSQL schema is included in the repository:
+
+- [Open ERD image](./DEXiWare%20ERD.png)
+
+![Database ERD](./DEXiWare%20ERD.png)
